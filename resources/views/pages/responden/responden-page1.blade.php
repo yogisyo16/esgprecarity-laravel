@@ -1,16 +1,16 @@
 @extends('layouts.responden.layout-responden')
 
 @section('content')
-    <div class="flex flex-row md:flex-col justify-center items-center w-full transition-opacity opacity-100 duration-750 starting:opacity-0">
-        <div class="flex flex-col items-center gap-2 sm:items-center md:items-center">
-            <h1 class="text-3xl bg-green-600 p-4 px-8">
+    <div class="flex flex-col justify-center items-center gap-6 max-w-auto transition-opacity opacity-100 duration-750 starting:opacity-0 md:items-center md:gap-5">
+        <div class="flex flex-col text-center gap-2 md:justify-center">
+            <h1 class="font-arvo font-bold text-3xl bg-texBgreen p-4 px-8 rounded-xl">
                 {{ __('messages.purposes') }}
             </h1>
-            <p class="mt-4 text-center">
+            <p class="font-arvo mt-6 mx-6 text-center">
                 {{ __('messages.explaination') }}
             </p>
         </div>
-        <div class="flex mt-16 gap-12">
+        <div class="flex">
             <a href="{{ route('page2ShowData') }}" class="btn btn-outline">{{ __('messages.next') }}</a>
         </div>
     </div>

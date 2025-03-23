@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap');
 @import 'tailwindcss';
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
@@ -9,4 +10,8 @@
 @theme {
     --font-sans: 'Arvo Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-arvo: 'Arvo', serif;
+    --color-navbarGreen: #00532b;
+    --color-bodyGreen: #004323;
+    --color-texBgreen: #71b93a;
 }

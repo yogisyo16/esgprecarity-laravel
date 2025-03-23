@@ -1,19 +1,19 @@
 @extends('layouts.responden.layout-responden')
 
 @section('content')
-    <div class="flex flex-row md:flex-col justify-center items-center w-full transition-opacity opacity-100 duration-750 starting:opacity-0">
-        <div class="flex flex-col items-center gap-2 sm:items-center md:items-center">
-            <h1 class="text-3xl bg-green-600 p-4 px-8">
+    <div class="flex flex-col justify-center items-center gap-6 max-w-auto transition-opacity opacity-100 duration-750 starting:opacity-0 md:items-center md:gap-5">
+        <div class="flex flex-col items-center gap-2 md:items-center">
+            <h1 class="font-arvo font-bold text-3xl bg-texBgreen p-4 px-8 rounded-xl">
                 {{ __('messages.terms_and_conditions') }}
             </h1>
-            <ul class="mt-4">
+            <ul class="font-arvo mt-4 mx-6">
                 <li class="list-disc list-inside">{{ __('messages.rules_1') }}</li>
                 <li class="list-disc list-inside">{{ __('messages.rules_2') }}</li>
                 <li class="list-disc list-inside">{{ __('messages.rules_3') }}</li>
             </ul>
-            <p class="text-2xl mt-8">{{ __('messages.rules_4') }}</p>
+            <p class="font-arvo text-2xl mt-8 mx-12 text-center md:mx-56 md:text-start">{{ __('messages.rules_4') }}</p>
         </div>
-        <div class="flex mt-8 gap-12">
+        <div class="font-arvo flex mt-8 gap-12">
             <a href="{{ route('noShowData') }}" class="btn btn-outline">{{ __('messages.no_rules') }}</a>
             <a href="{{ route('page2ShowData') }}" class="btn btn-outline">{{ __('messages.yes_rules') }}</a>
         </div>
