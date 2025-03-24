@@ -1,8 +1,8 @@
 ### What is ESGPRECARITY
-
 This Study aims to explore how CEOs in developing countries make ESG investments within the context of political supremacy.
 
-
+## My job here...
+To create a questionnaire website, that aims on having good UI/UX. That made user easy to understand it, and make it **[interesting](https://dictionary.cambridge.org/dictionary/english/interesting)**
 
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
