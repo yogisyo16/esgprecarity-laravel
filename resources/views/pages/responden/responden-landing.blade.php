@@ -1,5 +1,9 @@
 @extends('layouts.responden.layout-responden')
 
+@section('title-name')
+    Landing Page
+@endsection
+
 @section('content')
     <div class="flex flex-col justify-center items-center gap-2 max-w-auto transition-opacity opacity-100 duration-750 starting:opacity-0 md:items-center md:gap-6">
         <div class="flex flex-col text-center gap-2 md:justify-center">

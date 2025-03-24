@@ -1,5 +1,9 @@
 @extends('layouts.responden.layout-responden')
 
+@section('title-name')
+    {{ __('messages.no_title') }}
+@endsection
+
 @section('content')
     <div class="flex flex-col justify-center items-center gap-6 max-w-auto transition-opacity opacity-100 duration-750 starting:opacity-0 md:items-center md:gap-5">
         <div class="flex flex-col items-center gap-2 md:items-center">

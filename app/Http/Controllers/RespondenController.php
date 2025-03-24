@@ -29,11 +29,29 @@ class RespondenController extends Controller
 
     public function showRespondenDataCollection()
     {
-        //show data to be collected
+        return view('pages.responden.responden-data');
     }
 
     public function getRespondenDataCollection(Request $request)
     {
-        //get data to be collected
+        // dd($request->all());
+        $validated = $request->validate([
+            'email_responden' => 'required|email',
+            'name_responden' => 'required',
+            'gender_responden' => 'required|in:laki-laki,perempuan',
+            'age_responden' => 'required',
+            'affiliation_responden' => 'required',
+            'job_responden' => 'required',
+            'education_responden' => 'required',
+        ]);
+
+        Responden::create($validated);
+
+        return redirect()->route('respondenShowData');
+    }
+
+    public function showQuestionnaireInformation()
+    {
+        return view('pages.responden.responden-questionnaire-information');
     }
 }

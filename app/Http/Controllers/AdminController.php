@@ -11,6 +11,11 @@ use Illuminate\Http\Request;
 
 class AdminController extends Controller
 {
+    public function adminLoginShow()
+    {
+        return view('pages.admin.admin-login');
+    }
+    
     public function adminDashboardShow(User $user, Responden $responden, DataFirst $dataFirst, DataSecond $dataSecond, DataThird $dataThird)
     {
         $user = User::get();
