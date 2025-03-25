@@ -14,6 +14,12 @@ Route::get('/page-2', [RespondenController::class, 'page2ShowData'])->name('page
 Route::get('/thank-you', [RespondenController::class, 'noShowData'])->name('noShowData');
 Route::get('/page-3', [RespondenController::class, 'showRespondenDataCollection'])->name('showRespondenDataCollection');
 Route::post('/page-3/submit-data', [RespondenController::class, 'getRespondenDataCollection'])->name('getRespondenDataCollection');
+Route::get('/page-4', [RespondenController::class, 'showQuestionnaireInformation'])->name('showQuestionnaireInformation');
+//responden-question
+Route::get('/page-5', [RespondenController::class, 'showQuestionPage1'])->name('showQuestionPage1');
+Route::post('/page-5/submit-data', [RespondenController::class, 'savedQuestionPage1'])->name('savedQuestionPage1');
+Route::get('/page-6', [RespondenController::class, 'showQuestionPage2'])->name('showQuestionPage2');
+
 //Language
 Route::get('/set-language/{locale}', [LanguageController::class, 'setLanguage'])->name('set.language');
 

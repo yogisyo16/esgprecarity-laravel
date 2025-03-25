@@ -7,6 +7,8 @@ return [
     'next' => 'Next',
     'back' => 'Back',
     'language' => 'English',
+    'no' => 'NO',
+    'yes' => 'YES',
 
     'purposes' => 'Purpose of the Study',
     'explaination' => 'This Study aims to explore how CEOs in developing countries make ESG investments within the context of political supremacy.',
@@ -16,8 +18,6 @@ return [
     'rules_2' => 'The data collected in this research will remain confidential and be used solely for scientific purposes.',
     'rules_3' => 'Participants must use a laptop or computer when completing and engaging in the research.',
     'rules_4' => 'By clicking “YES,” I confirm that I have read and agreed to the above terms and consent to participate in this research until its completion.',
-    'no_rules' => 'NO',
-    'yes_rules' => 'YES',
 
     //not parcipate
     'no_title' => 'Thank You',
@@ -57,4 +57,38 @@ return [
     'survey_question_5' => 'I acknowledge that sustainable investment can serve as a strategic tool to achieve global political supremacy while supporting the objectives of the Paris Agreement.',
     'survey_question_6' => 'I understand that the Paris Agreement requires nations to make sustainable investment decisions to safeguard the environment.',
     'survey_question_7' => 'I recognize that the connection between sustainable investment and global political influence can enhance the implementation and enforcement of the Paris Agreement.',
+    'survey_question_8' => 'I am capable of preventing environmental misuse by implementing proactive measures.',
+    'survey_question_9' => 'I can help prevent further disruption to the balance of nature.',
+    'survey_question_10' => 'I am committed to addressing critical environmental issues such as pollution, overpopulation, toxic waste, and the depletion of natural resources.',
+
+    //survey page 2
+    'survey_question_11' => 'I contribute to reducing pollution levels that have reached hazardous thresholds.',
+    'survey_question_12' => 'I possess the knowledge to implement preventive measures that mitigate environmental pollution risks.',
+    'survey_question_13' => 'I have the ability to contribute to reducing environmental issues over the next decade.',
+    'survey_question_14' => 'I can inspire and influence those around me to take action in preserving the environment.',
+    'survey_question_15' => 'I am mindful of my technology usage and can manage its impact on the environment.',
+    'survey_question_16' => 'I am capable of identifying alternative solutions to address waste storage challenges.',
+    'survey_question_17' => 'I actively contribute to conserving natural resources for future generations.',
+    'survey_question_18' => 'I am willing to adapt my lifestyle and behavior to align more closely with environmental sustainability, fostering a stronger connection between humans and nature.',
+    'survey_question_19' => 'I am able to participate in decision-making processes that directly impact our lives and the environment.',
+    'survey_question_20' => 'I play an active role in supporting environmental action groups in tackling various ecological challenges.',
+    'survey_question_21' => 'I prioritize environmental protection in my daily actions and decisions.',
+
+    //next instruction page
+    'instruction_title' => 'Instructions!',
+    'instruction_field' => 'Before proceeding to the next stage, ensure that you are the CEO of a company committed to sustainability.',
+
+    //list of instruction page
+    'instruction_list_1' => 'You are the CEO of Vian Mining Co., responsible for overseeing investments in ESG activities.',
+    'instruction_list_2' => 'The company must adhere to good mining practices, particularly in reclamation, as mandated by the Minister of Energy and Mineral Resources Regulation No. 7 of 2014.',
+    'instruction_list_3' => 'For 2023, Vian Mining Co. estimates its Asset Retirement Obligations (ARO) at $220 million and Environmental Obligations (EO) at $120 million, covering provisions for asset dismantling, rehabilitation, reclamation, and closure.',
+
+    //list of instruction page 2
+    'instruction_list_4' => 'On May 19, 2023, Vian Mining Co. entered into an agreement with Bank BCA for the issuance of a  Bank Guarantee totaling  $340 million as a reclamation guarantee.',
+    'instruction_list_5' => 'The following information pertains to the Statement of Financial Position and reclamation activities for the years 2023 and 2022.',
+
+    //question after list and image
+    'essay_question_1' => 'As the CEO of Vian Mining Co., your annual compensation is 15% of the Co. net profit .',
+    'essay_question_2' => 'Jika pada tahun 2024 perusahaan memperoleh laba perusahaan sebesar $4,500 dan anda memperoleh kompensasi sebesar $675',
+    'essay_question_3' => 'Dari informasi yang tersaji, apakah anda akan melakukan investasi tambahan dalam aktivitas ESG?',
 ];

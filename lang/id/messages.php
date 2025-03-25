@@ -7,6 +7,8 @@ return [
     'next' => 'Selanjutnya',
     'back' => 'Kembali',
     'language' => 'Indonesia',
+    'no' => 'TIDAK',
+    'yes' => 'YA',
 
     'title-page-1' => 'page-1',
     'purposes' => 'Tujuan Penelitian',
@@ -18,9 +20,7 @@ return [
     'rules_2' => 'Data yang diperoleh dari penelitian ini di jaga kerahasiaannya dan hanya digunakan untuk kepentingan ilmiah.',
     'rules_3' => 'Partisipan diharapkan menggunakan perangkat laptop/komputer saat pengisian dan pengerjaan penelitian.',
     'rules_4' => 'Dengan mengklik “YA”, saya telah menyetujui pertimbangan di atas dan bersedia untuk melanjutkan proses penelitian ini sampai selesai.',
-    'no_rules' => 'TIDAK',
-    'yes_rules' => 'YA',
-
+    
     //not parcipate
     'no_title' => 'Terima Kasih',
     'no_answer' => 'Kami sepenuhnya menghargai keputusan Anda. Terima kasih atas tanggapannya. Jika ada hal lain yang dapat kami bantu di masa depan, jangan ragu untuk menghubungi kami.',
@@ -59,6 +59,38 @@ return [
     'survey_question_5' => 'Saya memahami bahwa investasi berkelanjutan dapat digunakan untuk memperkuat peran dan pengaruh di tingkat global dalam mendukung tujuan Perjanjian Paris.',
     'survey_question_6' => 'Saya mampu memahami bahwa Perjanjian Paris mengharuskan negara untuk membuat keputusan investasi berkelanjutan demi menjaga lingkungan.',
     'survey_question_7' => 'Saya mampu memahami bahwa hubungan antara investasi berkelanjutan dan pengaruh politik global dapat mendukung implementasi serta kepatuhan terhadap Perjanjian Paris.',
+    'survey_question_8' => 'Saya mampu mencegah penyalahgunaan lingkungan dengan menerapkan langkah-langkah proaktif.',
+    'survey_question_9' => 'Saya mampu mencegah kerusakan lebih lanjut terhadap keseimbangan alam.',
+    'survey_question_10' => 'Saya mampu mengatasi masalah lingkungan yang mendesak saat ini, seperti polusi, populasi berlebih, limbah beracun, kekurangan sumber daya alam, dan lainnya.',
 
     //survey page 2
+    'survey_question_11' => 'Saya berkontribusi dalam mengurangi tingkat polusi yang telah mencapai ambang batas berbahaya.',
+    'survey_question_12' => 'Saya mampu untuk melakukan tindakan pencegahan dalam rangka mengurangi risiko pencemaran lingkungan.',
+    'survey_question_13' => 'Saya mampu untuk berkontribusi dalam mengurangi masalah lingkungan dalam satu dekade ke depan.',
+    'survey_question_14' => 'Saya mampu memengaruhi masyarakat sekitar untuk bersama melakukan tindakan pelestarian lingkungan.',
+    'survey_question_15' => 'Saya mampu mengendalikan penggunaan teknologi dalam kehidupan sehari-hari.',
+    'survey_question_16' => 'Saya mampu mencari solusi alternatif untuk mengatasi masalah penyimpanan limbah.',
+    'survey_question_17' => 'Saya mampu berkontribusi dalam melestarikan sumber daya alam untuk generasi mendatang.',
+    'survey_question_18' => 'Saya mampu mengubah perilaku dan gaya hidup agar lebih selaras dengan lingkungan dan memperkuat hubungan manusia dan lingkungan.',
+    'survey_question_19' => 'Saya mampu berpartisipasi dalam proses pengambilan keputusan pada tingkat yang memengaruhi kehidupan.',
+    'survey_question_20' => 'Saya mampu berperan aktif mendukung upaya-upaya kelompok aksi pecinta lingkungan dalam mengatasi berbagai masalah lingkungan.',
+    'survey_question_21' => 'Saya mampu untuk memprioritaskan perlindungan lingkungan.',
+
+    //next instruction page
+    'instruction_title' => 'Instruksi Pengerjaan!',
+    'instruction_field' => 'Sebelum melanjutkan ke tahap selanjutnya, pastikan Anda memahami peran Anda disini sebagai CEO perusahaan yang mendukung aktivitas keberlanjutan.',
+
+    //list of instruction page
+    'instruction_list_1' => 'Anda adalah CEO perusahaan Vian Mining Co yang bertanggung jawab dalam memastikan jumlah investasi dalam aktivitas ESG.',
+    'instruction_list_2' => 'Perusahaan wajib memenuhi good mining practice terkait Reklamasi berlandaskan Peraturan Menteri ESDM No. 7 Tahun 2014.',
+    'instruction_list_3' => 'Perusahaan mengestimasikan bahwa nilai asset retirement obligations (ARO) dan environmental obligation (EO) pada tahun 2023 adalah $220 Million dan $120 Million yang merupakan bagian dari Provisi pembongkaran, rehabilitas, reklamasi, dan penutupan asset.',
+
+    //list of instruction page 2
+    'instruction_list_4' => 'Pada tanggal 19 Mei 2023, perusahaan mengadakan perjanjian dengan Bank BCA untuk penerbitan Bank Guarantee sebesar $340 untuk jaminan reklamasi perusahaan.',
+    'instruction_list_5' => 'Berikut ini informasi terkait dengan Laporan Posisi Keuangan dan kegiatan reklamasi tahun 2023 dan 2022.',
+
+    //question after list and image
+    'essay_question_1' => 'Sebagai seorang CEO anda memperoleh kompensasi setiap tahunnya sebesar $387 yang diperoleh dari 15% laba bersih perusahaan',
+    'essay_question_2' => 'Jika pada tahun 2024 perusahaan memperoleh laba perusahaan sebesar $4,500 dan anda memperoleh kompensasi sebesar $675',
+    'essay_question_3' => 'Dari informasi yang tersaji, apakah anda akan melakukan investasi tambahan dalam aktivitas ESG?',
 ];

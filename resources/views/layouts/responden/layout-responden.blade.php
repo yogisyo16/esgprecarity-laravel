@@ -13,7 +13,10 @@
             <div class="flex-none">
             </div>
             <div class="flex-1">
-                <a class="btn btn-ghost text-xl">Esgprecarity</a>
+                <a class="btn btn-ghost text-xl items-center rounded-full p-0 pr-2 bg-white text-black">
+                    <img src="/images/esgprecarity-logo.png" class="w-10" alt="">
+                    <span>Esgprecarity</span>
+                </a>
             </div>
         </div>
         <div class="flex flex-1 justify-center m-2 md:m-10">

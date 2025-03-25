@@ -8,9 +8,9 @@
             </h1>
             <form method="POST" action="{{ route('getRespondenDataCollection') }}" class="container flex flex-col font-arvo border-2 border-teal-950 text-start justify-start items-start px-4 py-4 rounded-lg md:justify-center md:items-center md:text-center md:px-8 md:py-6">
                 @csrf
-                <label for="email" class="input mb-3 md:mb-5">
+                <label class="input mb-3 md:mb-5">
                     <span class="label">{{ __('messages.email') }}</span>
-                    <input type="text" id="email_responden" name="email_responden" placeholder="{{ __('messages.placeholder') }}"/>
+                    <input type="text" id="email_responden" name="email_responden" placeholder="{{ __('messages.placeholder') }}" value="{{ old('email_responden') }}"/>
                 </label>
                 @error('email_responden')
                     <div role="alert" class="alert alert-error mb-3 md:mb-5">
@@ -21,11 +21,11 @@
                         <button class="btn btn-sm">Close</button>
                     </div>
                 @enderror
-                <label for="name" class="input mb-3 md:mb-5">
+                <label class="input mb-3 md:mb-5">
                     <span class="label">{{ __('messages.name') }}</span>
                     <input type="text" id="name_responden" name="name_responden" placeholder="{{ __('messages.placeholder') }}"/>
                 </label>
-                <label for="gender" class="select mb-3 md:mb-5">
+                <label class="select mb-3 md:mb-5">
                     <span class="label">{{ __('messages.gender') }}</span>
                     <select name="gender_responden" id="gender_responden">
                         <option value="#">{{ __('messages.placeholder_select') }}</option>
@@ -42,19 +42,19 @@
                         <button class="btn btn-sm">Close</button>
                     </div>
                 @enderror
-                <label for="age" class="input mb-3 md:mb-5">
+                <label class="input mb-3 md:mb-5">
                     <span class="label">{{ __('messages.age') }}</span>
                     <input type="text" id="age_responden" name="age_responden" placeholder="{{ __('messages.placeholder') }}"/>                  
                 </label>
-                <label for="affiliation" class="input mb-3 md:mb-5">
+                <label class="input mb-3 md:mb-5">
                     <span class="label">{{ __('messages.affiliation') }}</span>
                     <input type="text" id="affiliation_responden" name="affiliation_responden" placeholder="{{ __('messages.placeholder') }}"/>                  
                 </label>
-                <label for="job" class="input mb-3 md:mb-5">
+                <label class="input mb-3 md:mb-5">
                     <span class="label">{{ __('messages.job') }}</span>
                     <input type="text" id="job_responden" name="job_responden" placeholder="{{ __('messages.placeholder') }}"/>                  
                 </label>
-                <label for="education" class="select mb-3 md:mb-5">
+                <label class="select mb-3 md:mb-5">
                     <span class="label">{{ __('messages.education') }}</span>
                     <select name="education_responden" id="education_responden">
                         <option value="#">{{ __('messages.placeholder_select') }}</option>
@@ -62,7 +62,7 @@
                         <option value="S1">S1</option>
                         <option value="S2">S2</option>
                         <option value="S3">S3</option>
-                    </select>                    
+                    </select>
                 </label>
                 @error('education_responden')
                     <div role="alert" class="alert alert-error mb-3 md:mb-5">
@@ -82,5 +82,5 @@
 @endsection
 
 @push('scripts')
-    @vite(['resources/js/responden.js'])
+    @vite(['resources/js/validation-data.js'])
 @endpush

@@ -18,8 +18,8 @@
             <p class="font-arvo text-2xl mt-8 mx-12 text-center md:mx-56 md:text-start">{{ __('messages.rules_4') }}</p>
         </div>
         <div class="font-arvo flex mt-8 gap-12">
-            <a href="{{ route('noShowData') }}" class="btn btn-outline">{{ __('messages.no_rules') }}</a>
-            <a href="{{ route('showRespondenDataCollection') }}" class="btn btn-outline">{{ __('messages.yes_rules') }}</a>
+            <a href="{{ route('noShowData') }}" class="btn btn-outline">{{ __('messages.no') }}</a>
+            <a href="{{ route('showRespondenDataCollection') }}" class="btn btn-outline">{{ __('messages.yes') }}</a>
         </div>
     </div>
 @endsection
