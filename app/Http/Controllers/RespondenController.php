@@ -75,6 +75,7 @@ class RespondenController extends Controller
     public function showQuestionPage2(Request $request)
     {
         $formData = $request->session()->get('formData');
+        dump($formData);
         return view('pages.responden.responden-questionnaire-page-2', compact('formData'));
     }
 

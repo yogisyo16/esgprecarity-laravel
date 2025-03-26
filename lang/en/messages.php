@@ -49,6 +49,13 @@ return [
     'survey_condition_4' => 'Scale (4) "agree"',
     'survey_condition_5' => 'Scale (5) "strongly agree"',
 
+    //scale point
+    'scale_point_1' => 'Strongly Disagree',
+    'scale_point_2' => 'Disagree',
+    'scale_point_3' => 'Neutral',
+    'scale_point_4' => 'Agree',
+    'scale_point_5' => 'Strongly Agree',
+
     //survey page 1
     'survey_question_1' => 'I am committed to fulfilling my responsibilities as a young individual by promoting a healthy environment.',
     'survey_question_2' => 'I strive to contribute positively to my country by supporting efforts to maintain a healthy environment.',

@@ -51,6 +51,13 @@ return [
     'survey_condition_4' => 'Skala (4) "setuju"',
     'survey_condition_5' => 'Skala (5) "sangat setuju`"',
 
+    //scale point
+    'scale_point_1' => 'Sangat Tidak Setuju',
+    'scale_point_2' => 'Tidak Setuju',
+    'scale_point_3' => 'Netral',
+    'scale_point_4' => 'Setuju',
+    'scale_point_5' => 'Sangat Setuju',
+
     //survey page 1
     'survey_question_1' => 'Saya berkomitmen untuk menjalankan tanggung jawab saya dalam mendukung dan menciptakan lingkungan yang sehat.',
     'survey_question_2' => 'Saya berusaha untuk berkontribusi secara positif kepada negara dengan mendukung upaya-upaya untuk menjaga lingkungan yang sehat.',
