@@ -1,6 +1,6 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-CEStPt_e.css",
+    "file": "assets/app-GC2_fRMR.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
@@ -8,6 +8,12 @@
     "file": "assets/app-DspuE8pW.js",
     "name": "app",
     "src": "resources/js/app.js",
+    "isEntry": true
+  },
+  "resources/js/validation-data.js": {
+    "file": "assets/validation-data-DkUgGtIH.js",
+    "name": "validation-data",
+    "src": "resources/js/validation-data.js",
     "isEntry": true
   }
 }
