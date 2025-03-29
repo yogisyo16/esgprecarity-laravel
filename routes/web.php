@@ -19,12 +19,24 @@ Route::get('/page-4', [RespondenController::class, 'showQuestionnaireInformation
 Route::get('/page-5', [RespondenController::class, 'showQuestionPage1'])->name('showQuestionPage1');
 Route::post('/page-5/submit-data', [RespondenController::class, 'savedQuestionPage1'])->name('savedQuestionPage1');
 Route::get('/page-6', [RespondenController::class, 'showQuestionPage2'])->name('showQuestionPage2');
-
+Route::post('/page-6/submit-data', [RespondenController::class, 'savedQuestionPage2'])->name('savedQuestionPage2');
+Route::get('/page-7', [RespondenController::class, 'page7ShowData'])->name('page7ShowData');
+Route::get('/page-8', [RespondenController::class, 'page8ShowData'])->name('page8ShowData');
+Route::get('/page-9', [RespondenController::class, 'page9ShowData'])->name('page9ShowData');
+Route::get('/page-10', [RespondenController::class, 'page10ShowData'])->name('page10ShowData');
+Route::get('/page-11', [RespondenController::class, 'page11ShowData'])->name('page11ShowData');
+Route::get('/page-12', [RespondenController::class, 'pageActData'])->name('pageActData');
+Route::get('/page-13/no', [RespondenController::class, 'pageNoInvestmentData'])->name('pageNoInvestmentData');
+Route::post('/page-13/no/submit-data', [RespondenController::class, 'saveNoInvestmentData'])->name('saveNoInvestmentData');
+Route::get('/page-13/yes', [RespondenController::class, 'pageYesInvestmentData'])->name('pageYesInvestmentData');
+Route::post('/page-13/yes/submit-data', [RespondenController::class, 'saveYesInvestmentData'])->name('saveYesInvestmentData');
+Route::get('/page-14', [RespondenController::class, 'pageEndQuestionnaire'])->name('pageEndQuestionnaire');
 //Language
 Route::get('/set-language/{locale}', [LanguageController::class, 'setLanguage'])->name('set.language');
 
 //admin
 Route::get('/V9e65vNfipHCDGD/login/private/admin', [AdminController::class, 'adminLoginShow'])->name('adminLoginShow');
-Route::get('/BuH6MDhXvBzU40C/dashboard/private/admin', [AdminController::class, 'adminDashboardShow'])->name('adminShowData');
+Route::post('/V9e65vNfipHCDGD/login/private/admin/login-auth', [AdminController::class, 'adminLoginAuth'])->name('adminLoginAuth');
+Route::get('/BuH6MDhXvBzU40C/dashboard/private/admin', [AdminController::class, 'adminDashboardShow'])->name('adminDashboardShow');
 
 Route::get('change', [LanguageController::class, 'change']);

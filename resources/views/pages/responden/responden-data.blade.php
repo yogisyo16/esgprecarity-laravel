@@ -1,5 +1,9 @@
 @extends('layouts.responden.layout-responden')
 
+@section('title-name')
+    Esgprecarity
+@endsection
+
 @section('content')
     <div class="flex flex-col justify-center items-center gap-6 max-w-auto transition-opacity opacity-100 duration-750 starting:opacity-0 md:items-center md:gap-5">
         <div class="flex flex-col items-center gap-4 mx-4 md:items-center">
@@ -44,7 +48,7 @@
                 @enderror
                 <label class="input mb-3 md:mb-5">
                     <span class="label">{{ __('messages.age') }}</span>
-                    <input type="text" id="age_responden" name="age_responden" placeholder="{{ __('messages.placeholder') }}"/>                  
+                    <input type="text" id="age_responden" name="age_responden" placeholder="{{ __('messages.placeholder') }}" onkeypress="return isNumber(event)"/>                  
                 </label>
                 <label class="input mb-3 md:mb-5">
                     <span class="label">{{ __('messages.affiliation') }}</span>

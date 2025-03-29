@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\DataFirst;
 use App\Models\Responden;
 use Illuminate\Http\Request;
 
@@ -99,5 +100,98 @@ class RespondenController extends Controller
         $request->session()->put('formData', $formData);
 
         return redirect()->route('showQuestionPage2');
+    }
+
+    public function savedQuestionPage2(Request $request)
+    {
+        $formData = $request->session()->get('formData');
+
+        $validated = $request->validate([
+            'data_que_eight' => 'required',
+            'data_que_nine' => 'required',
+            'data_que_ten' => 'required',
+            'data_que_eleven' => 'required',
+            'data_que_twelve' => 'required',
+            'data_que_thirteen' => 'required',
+            'data_que_fourteen' => 'required',
+            'data_que_fifteen' => 'required',
+            'data_que_sixteen' => 'required',
+            'data_que_seventeen' => 'required',
+            'data_que_eighteen' => 'required',
+            'data_que_nineteen' => 'required',
+            'data_que_twenty' => 'required',
+            'data_que_twentyone' => 'required',
+        ]);
+
+        $formData = array_merge(
+            $request->session()->get('formData', []),
+            $validated
+        );
+
+        $request->session()->put('formData', $formData);
+
+        $look_data = DataFirst::create($formData);
+
+        dd([
+            $look_data,
+            'formData' => $formData
+        ]);
+
+        return redirect()->route('respondenShowData');
+    }
+
+    public function page7ShowData()
+    {
+        return view('pages.responden.responden-page7');
+    }
+
+    public function page8ShowData()
+    {
+        return view('pages.responden.responden-page8');
+    }
+
+    public function page9ShowData()
+    {
+        return view('pages.responden.responden-page9');
+    }
+
+    public function page10ShowData()
+    {
+        return view('pages.responden.responden-image-1');
+    }
+
+    public function page11ShowData()
+    {
+        return view('pages.responden.responden-image-2');
+    }
+
+    public function pageActData()
+    {
+        return view('pages.responden.responden-act-question');
+    }
+
+    public function pageNoInvestmentData()
+    {
+        return view('pages.responden.responden-last-question-no');
+    }
+
+    public function saveNoInvestmentData(Request $request)
+    {
+        
+    }
+
+    public function pageYesInvestmentData()
+    {
+        return view('pages.responden.responden-last-question-yes');
+    }
+
+    public function saveYesInvestmentData(Request $request)
+    {
+        
+    }
+
+    public function pageEndQuestionnaire()
+    {
+        return view('pages.responden.responden-end-questionnaire');
     }
 }
