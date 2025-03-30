@@ -9,6 +9,10 @@ return [
     'language' => 'English',
     'no' => 'NO',
     'yes' => 'YES',
+    'login' => 'Login',
+    'logout' => 'Logout',
+    'username' => 'Username',
+    'password' => 'Password',
 
     'purposes' => 'Purpose of the Study',
     'explaination' => 'This Study aims to explore how CEOs in developing countries make ESG investments within the context of political supremacy.',

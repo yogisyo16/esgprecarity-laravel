@@ -12,7 +12,9 @@ class DataSecond extends Model
 
     protected $fillable = [
         'responden_id',
-        'data_que_number_second',
+        'answer_yes',
+        'answer_no',
+        'nominal_answer',
     ];
 
     public function responden(): BelongsTo

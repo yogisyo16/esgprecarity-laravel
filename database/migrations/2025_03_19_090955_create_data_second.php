@@ -19,6 +19,7 @@ return new class extends Migration
             
             $table->string('answer_yes');
             $table->string('answer_no');
+            $table->string('nominal_answer');
             $table->timestamps();
         });
     }

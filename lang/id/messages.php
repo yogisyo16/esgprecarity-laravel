@@ -9,6 +9,10 @@ return [
     'language' => 'Indonesia',
     'no' => 'TIDAK',
     'yes' => 'YA',
+    'login' => 'Masuk',
+    'logout' => 'Keluar',
+    'username' => 'Nama Pengguna',
+    'password' => 'Kata Sandi',
 
     'title-page-1' => 'page-1',
     'purposes' => 'Tujuan Penelitian',
