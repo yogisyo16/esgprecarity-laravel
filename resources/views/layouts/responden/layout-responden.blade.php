@@ -8,7 +8,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
-    <div class="flex flex-col min-w-full min-h-screen bg-bodyGreen text-white">
+    <div class="flex flex-col min-w-full min-h-screen bg-bodyGreen md:bg-[url('/public/images/bg-canvas-2.png')] md:bg-cover md:bg-fixed text-white">
         <div class="navbar bg-navbarGreen shadow-md">
             <div class="flex-none">
             </div>

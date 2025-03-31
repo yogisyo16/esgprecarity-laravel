@@ -13,13 +13,6 @@
             </ul>
         </div>
         <div class="font-arvo flex mt-8 gap-12">
-            <details class="dropdown">
-                <summary class="btn btn-outline mr-2">Language: {{ __('messages.language') }}</summary>
-                <ul class="menu dropdown-content bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
-                    <li><a href="{{ route('set.language', 'en') }}">English</a></li>
-                    <li><a href="{{ route('set.language', 'id') }}">Indonesia</a></li>
-                </ul>
-            </details>
             <a href="{{ route('page8ShowData') }}" class="btn btn-outline">{{ __('messages.back') }}</a>
             <a href="{{ route('page10ShowData') }}" class="btn btn-outline">{{ __('messages.next') }}</a>
         </div>

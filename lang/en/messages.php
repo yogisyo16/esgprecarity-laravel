@@ -102,4 +102,13 @@ return [
     'essay_question_1' => 'As the CEO of Vian Mining Co., your annual compensation is 15% of the Co. net profit .',
     'essay_question_2' => 'Jika pada tahun 2024 perusahaan memperoleh laba perusahaan sebesar $4,500 dan anda memperoleh kompensasi sebesar $675',
     'essay_question_3' => 'Dari informasi yang tersaji, apakah anda akan melakukan investasi tambahan dalam aktivitas ESG?',
+
+    //last question no and yes
+    'last_question' => 'What is your projected ESG investment allocation for 2024, if (How much the ESG Investment will allocate for 2024?)',
+    'last_question_english' => '',
+    'last_question_no' => 'NO',
+    'last_question_yes' => 'YES',
+
+    //end questionnaire
+    'end_questionnaire' => 'Thank you for participate in this experiment.',
 ];

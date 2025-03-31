@@ -104,4 +104,12 @@ return [
     'essay_question_1' => 'Sebagai seorang CEO anda memperoleh kompensasi setiap tahunnya sebesar $387 yang diperoleh dari 15% laba bersih perusahaan',
     'essay_question_2' => 'Jika pada tahun 2024 perusahaan memperoleh laba perusahaan sebesar $4,500 dan anda memperoleh kompensasi sebesar $675',
     'essay_question_3' => 'Dari informasi yang tersaji, apakah anda akan melakukan investasi tambahan dalam aktivitas ESG?',
+
+    //last question no and yes
+    'last_question' => 'Berapa nilai investasi ESG yang akan ada rencanakan pada tahun 2024 jika',
+    'last_question_no' => 'TIDAK',
+    'last_question_yes' => 'YA',
+
+    //end questionnaire
+    'end_questionnaire' => 'Terima Kasih telah berpartisipiasi dalam penelitian ini.',
 ];

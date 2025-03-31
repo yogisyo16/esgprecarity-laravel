@@ -12,8 +12,7 @@ class DataSecond extends Model
 
     protected $fillable = [
         'responden_id',
-        'answer_yes',
-        'answer_no',
+        'value_answer',
         'nominal_answer',
     ];
 

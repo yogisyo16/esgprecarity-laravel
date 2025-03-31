@@ -76,7 +76,7 @@ class RespondenController extends Controller
     public function showQuestionPage2(Request $request)
     {
         $formData = $request->session()->get('formData');
-        dump($formData);
+        // dump($formData);
         return view('pages.responden.responden-questionnaire-page-2', compact('formData'));
     }
 
@@ -132,16 +132,17 @@ class RespondenController extends Controller
 
         $look_data = DataFirst::create($formData);
 
-        dd([
-            $look_data,
-            'formData' => $formData
-        ]);
+        // dd([
+        //     $look_data,
+        //     'formData' => $formData
+        // ]);
 
-        return redirect()->route('respondenShowData');
+        return redirect()->route('page7ShowData');
     }
 
     public function page7ShowData()
     {
+        // dump(session()->get('formData'));
         return view('pages.responden.responden-page7');
     }
 
