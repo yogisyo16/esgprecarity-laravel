@@ -1,6 +1,10 @@
 {
+  "public/images/bg-canvas-2.png": {
+    "file": "assets/bg-canvas-2-CSdcge5f.png",
+    "src": "public/images/bg-canvas-2.png"
+  },
   "resources/css/app.css": {
-    "file": "assets/app-GC2_fRMR.css",
+    "file": "assets/app-CM9DouYo.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
@@ -11,7 +15,7 @@
     "isEntry": true
   },
   "resources/js/validation-data.js": {
-    "file": "assets/validation-data-DkUgGtIH.js",
+    "file": "assets/validation-data-BQZViFMa.js",
     "name": "validation-data",
     "src": "resources/js/validation-data.js",
     "isEntry": true
