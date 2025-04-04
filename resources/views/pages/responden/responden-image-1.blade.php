@@ -7,7 +7,7 @@
 @section('content')
     <div class="flex flex-col justify-center items-center gap-6 max-w-auto transition-opacity opacity-100 duration-750 starting:opacity-0 md:items-center md:gap-5">
         <div class="flex flex-col items-center gap-2 md:items-center">
-            <img src="/images/vian-mining-co.png" alt="">
+            <img src="{{ __('messages.image_money') }}" alt="">
         </div>
         <div class="font-arvo flex mt-8 gap-12">
             <a href="{{ route('page11ShowData') }}" class="btn btn-outline">{{ __('messages.next') }}</a>

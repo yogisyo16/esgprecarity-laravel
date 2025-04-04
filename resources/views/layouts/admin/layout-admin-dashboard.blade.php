@@ -10,10 +10,11 @@
 <body>
     <div class="flex flex-col min-w-full min-h-screen bg-zinc-500 text-white">
         <div class="navbar bg-navbarGreen shadow-md">
-            <div class="flex-none">
-            </div>
             <div class="flex-1">
                 <a class="btn btn-ghost text-xl">Esgprecarity</a>
+            </div>
+            <div class="flex-none">
+                @stack('logout-user')
             </div>
         </div>
         <div class="flex flex-1 justify-center m-2 md:m-10">

@@ -13,6 +13,8 @@ return [
     'logout' => 'Logout',
     'username' => 'Username',
     'password' => 'Password',
+    'password_placeholder' => 'Enter Password',
+    'show_password' => 'Show Password',
 
     'purposes' => 'Purpose of the Study',
     'explaination' => 'This Study aims to explore how CEOs in developing countries make ESG investments within the context of political supremacy.',
@@ -97,6 +99,11 @@ return [
     //list of instruction page 2
     'instruction_list_4' => 'On May 19, 2023, Vian Mining Co. entered into an agreement with Bank BCA for the issuance of a  Bank Guarantee totaling  $340 million as a reclamation guarantee.',
     'instruction_list_5' => 'The following information pertains to the Statement of Financial Position and reclamation activities for the years 2023 and 2022.',
+
+    //image 1 and 2
+    'image_money' => 'images/vian-mining-co-english.png',
+    'table_title_image' => 'Table of Reclamation Activities in 2023 Vian Mining Co.',
+    'image_table' => 'images/table-vian-mining-co-english.png',
 
     //question after list and image
     'essay_question_1' => 'As the CEO of Vian Mining Co., your annual compensation is 15% of the Co. net profit .',

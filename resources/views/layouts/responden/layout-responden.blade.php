@@ -10,13 +10,14 @@
 <body>
     <div class="flex flex-col min-w-full min-h-screen bg-bodyGreen md:bg-[url('/public/images/bg-canvas-2.png')] md:bg-cover md:bg-fixed text-white">
         <div class="navbar bg-navbarGreen shadow-md">
-            <div class="flex-none">
-            </div>
             <div class="flex-1">
                 <a class="btn btn-ghost text-xl items-center rounded-full p-0 pr-2 bg-white text-black">
                     <img src="/images/esgprecarity-logo.png" class="w-10" alt="">
                     <span>Esgprecarity</span>
                 </a>
+            </div>
+            <div class="flex-none">
+                @stack('language')
             </div>
         </div>
         <div class="flex flex-1 justify-center m-2 md:m-10">

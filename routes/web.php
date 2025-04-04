@@ -37,6 +37,9 @@ Route::get('/set-language/{locale}', [LanguageController::class, 'setLanguage'])
 //admin
 Route::get('/V9e65vNfipHCDGD/login/private/admin', [AdminController::class, 'adminLoginShow'])->name('adminLoginShow');
 Route::post('/V9e65vNfipHCDGD/login/private/admin/login-auth', [AdminController::class, 'adminLoginAuth'])->name('adminLoginAuth');
-Route::get('/BuH6MDhXvBzU40C/dashboard/private/admin', [AdminController::class, 'adminDashboardShow'])->name('adminDashboardShow');
+Route::middleware(['auth'])->prefix('V9e65vNfipHCDGD/private')->group(function () {
+    Route::post('/logout-auth', [AdminController::class, 'adminLogout'])->name('adminLogout');
+    Route::get('/dashboard', [AdminController::class, 'adminDashboardShow'])->name('adminDashboardShow');
+});
 
 Route::get('change', [LanguageController::class, 'change']);

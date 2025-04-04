@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title-name')</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @stack('styles')
 </head>
 <body>
     <div class="flex flex-col min-w-full min-h-screen bg-bodyGreen text-white">
@@ -20,5 +21,6 @@
             @yield('content')
         </div>
     </div>
+    @stack('scripts')
 </body>
 </html>

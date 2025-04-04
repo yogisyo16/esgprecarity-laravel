@@ -13,6 +13,8 @@ return [
     'logout' => 'Keluar',
     'username' => 'Nama Pengguna',
     'password' => 'Kata Sandi',
+    'password_placeholder' => 'Masukkan Kata Sandi',
+    'show_password' => 'Tampilkan Kata Sandi',
 
     'title-page-1' => 'page-1',
     'purposes' => 'Tujuan Penelitian',
@@ -99,6 +101,11 @@ return [
     //list of instruction page 2
     'instruction_list_4' => 'Pada tanggal 19 Mei 2023, perusahaan mengadakan perjanjian dengan Bank BCA untuk penerbitan Bank Guarantee sebesar $340 untuk jaminan reklamasi perusahaan.',
     'instruction_list_5' => 'Berikut ini informasi terkait dengan Laporan Posisi Keuangan dan kegiatan reklamasi tahun 2023 dan 2022.',
+
+    //image 1 and 2
+    'image_money' => 'images/vian-mining-co-english.png',
+    'table_title_image' => 'Table of Reclamation Activities in 2023 Vian Mining Co.',
+    'image_table' => 'images/table-vian-mining-co-english.png',
 
     //question after list and image
     'essay_question_1' => 'Sebagai seorang CEO anda memperoleh kompensasi setiap tahunnya sebesar $387 yang diperoleh dari 15% laba bersih perusahaan',

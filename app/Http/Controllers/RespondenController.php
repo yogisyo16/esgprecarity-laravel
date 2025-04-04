@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\DataFirst;
+use App\Models\DataSecond;
 use App\Models\Responden;
 use Illuminate\Http\Request;
 
@@ -173,12 +174,32 @@ class RespondenController extends Controller
 
     public function pageNoInvestmentData()
     {
+        // dump(session()->get('formData'));
         return view('pages.responden.responden-last-question-no');
     }
 
     public function saveNoInvestmentData(Request $request)
     {
+
+        $responden_id = $request->session()->get('formData')["responden_id"];
+
+        // Validate the request
+        $validated = $request->validate([
+            'nominal_answer' => 'required',
+        ]);
+
+        // Merge all data including manual fields
+        $dataToSave = array_merge(
+            $validated, // validated input data first
+            [
+                'responden_id' => $responden_id,
+                'value_answer' => 'no'
+            ]
+        );
         
+        DataSecond::create($dataToSave);
+
+        return redirect()->route('respondenShowData');
     }
 
     public function pageYesInvestmentData()
@@ -188,7 +209,25 @@ class RespondenController extends Controller
 
     public function saveYesInvestmentData(Request $request)
     {
-        
+        $responden_id = $request->session()->get('formData')["responden_id"];
+
+        // Validate the request
+        $validated = $request->validate([
+            'nominal_answer' => 'required',
+        ]);
+
+        // Merge all data including manual fields
+        $dataToSave = array_merge(
+            $validated, // validated input data first
+            [
+                'responden_id' => $responden_id,
+                'value_answer' => 'yes'
+            ]
+        );
+
+        DataSecond::create($dataToSave);
+
+        return redirect()->route('respondenShowData');
     }
 
     public function pageEndQuestionnaire()
