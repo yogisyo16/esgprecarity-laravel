@@ -50,6 +50,17 @@
                 <table id="myTable" class="display font-arvo bg-green-800 border-black border-2">
                     <thead>
                         <tr>
+                            <th colspan="2">
+                                
+                            </th>
+                            <th colspan="7">
+                                Cognitive Deep State
+                            </th>
+                            <th colspan="15">
+                                Environmentalism
+                            </th>
+                        </tr>
+                        <tr>
                             <th></th>
                             <th>{{ __('messages.email') }}</th>
                             <th>{{ __('messages.name') }}</th>
