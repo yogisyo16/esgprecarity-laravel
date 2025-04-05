@@ -232,6 +232,7 @@ class RespondenController extends Controller
 
     public function pageEndQuestionnaire()
     {
+        session()->forget('formData');
         return view('pages.responden.responden-end-questionnaire');
     }
 }

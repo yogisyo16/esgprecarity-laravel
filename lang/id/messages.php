@@ -119,4 +119,35 @@ return [
 
     //end questionnaire
     'end_questionnaire' => 'Terima Kasih telah berpartisipiasi dalam penelitian ini.',
+
+
+    //Admin site
+    //dashboard
+    'dashboard' => 'Dashboard',
+    'responden' => 'Responden',
+    'data' => 'Data',
+    'dashboard_table' => 'Tabel Responden',
+    'menu_table' => 'Data Tabel',
+
+    'admin_question_1' => 'Pertanyaan 1',
+    'admin_question_2' => 'Pertanyaan 2',
+    'admin_question_3' => 'Pertanyaan 3',
+    'admin_question_4' => 'Pertanyaan 4',
+    'admin_question_5' => 'Pertanyaan 5',
+    'admin_question_6' => 'Pertanyaan 6',
+    'admin_question_7' => 'Pertanyaan 7',
+    'admin_question_8' => 'Pertanyaan 8',
+    'admin_question_9' => 'Pertanyaan 9',
+    'admin_question_10' => 'Pertanyaan 10',
+    'admin_question_11' => 'Pertanyaan 11',
+    'admin_question_12' => 'Pertanyaan 12',
+    'admin_question_13' => 'Pertanyaan 13',
+    'admin_question_14' => 'Pertanyaan 14',
+    'admin_question_15' => 'Pertanyaan 15',
+    'admin_question_16' => 'Pertanyaan 16',
+    'admin_question_17' => 'Pertanyaan 17',
+    'admin_question_18' => 'Pertanyaan 18',
+    'admin_question_19' => 'Pertanyaan 19',
+    'admin_question_20' => 'Pertanyaan 20',
+    'admin_question_21' => 'Pertanyaan 21',
 ];

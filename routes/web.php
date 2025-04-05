@@ -40,6 +40,7 @@ Route::post('/V9e65vNfipHCDGD/login/private/admin/login-auth', [AdminController:
 Route::middleware(['auth'])->prefix('V9e65vNfipHCDGD/private')->group(function () {
     Route::post('/logout-auth', [AdminController::class, 'adminLogout'])->name('adminLogout');
     Route::get('/dashboard', [AdminController::class, 'adminDashboardShow'])->name('adminDashboardShow');
+    Route::get('/dashboard/table', [AdminController::class, 'adminShowTable'])->name('adminShowTable');
 });
 
 Route::get('change', [LanguageController::class, 'change']);

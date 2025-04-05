@@ -118,4 +118,34 @@ return [
 
     //end questionnaire
     'end_questionnaire' => 'Thank you for participate in this experiment.',
+
+
+    //Admin site
+    //dashboard
+    'dashboard' => 'Dashboard',
+    'responden' => 'Responden',
+    'data' => 'Data',
+    'dashboard_table' => 'Responden Table',
+    'menu_table' => 'Data Table',
+    'admin_question_1' => 'Question 1',
+    'admin_question_2' => 'Question 2',
+    'admin_question_3' => 'Question 3',
+    'admin_question_4' => 'Question 4',
+    'admin_question_5' => 'Question 5',
+    'admin_question_6' => 'Question 6',
+    'admin_question_7' => 'Question 7',
+    'admin_question_8' => 'Question 8',
+    'admin_question_9' => 'Question 9',
+    'admin_question_10' => 'Question 10',
+    'admin_question_11' => 'Question 11',
+    'admin_question_12' => 'Question 12',
+    'admin_question_13' => 'Question 13',
+    'admin_question_14' => 'Question 14',
+    'admin_question_15' => 'Question 15',
+    'admin_question_16' => 'Question 16',
+    'admin_question_17' => 'Question 17',
+    'admin_question_18' => 'Question 18',
+    'admin_question_19' => 'Question 19',
+    'admin_question_20' => 'Question 20',
+    'admin_question_21' => 'Question 21',
 ];

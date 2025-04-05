@@ -43,12 +43,34 @@ class AdminController extends Controller
 
     public function adminDashboardShow(User $user, Responden $responden, DataFirst $dataFirst, DataSecond $dataSecond)
     {
-        $responden = Responden::all();
-        $dataFirst = DataFirst::get()->groupBy('responden_id');
-        $dataSecond = DataSecond::all();
+        $responden = Responden::with('DataFirst', 'DataSecond')->get();
+        $dataFirst = DataFirst::get();
+        $dataSecond = DataSecond::get();
 
-        dump($dataFirst);
+        $countResponden = Responden::count();
 
-        return view('pages.admin.admin-dashboard', compact('user', 'responden', 'dataFirst', 'dataSecond'));
+        $countSecondAnswerNo = DataSecond::where('value_answer', 'no')->count();
+        $countSecondAnswerYes = DataSecond::where('value_answer', 'yes')->count();
+
+        //this for chart
+        $chartData = Responden::selectRaw('DATE(created_at) as date, COUNT(*) as count')
+            ->groupBy('date')
+            ->orderBy('date')
+            ->get();
+        
+        $chartPieAnswerData = DataFirst::selectRaw('responden_id, COUNT(*) as count')
+            ->groupBy('responden_id')
+            ->get();
+
+        return view('pages.admin.admin-dashboard', compact('user', 'responden', 'dataFirst', 'dataSecond', 'countResponden', 'chartData', 'countSecondAnswerYes', 'countSecondAnswerNo'));
+    }
+
+    public function adminShowTable(Responden $responden, DataFirst $dataFirst, DataSecond $dataSecond)
+    {
+        $responden = Responden::with('DataFirst', 'DataSecond')->get();
+        $dataFirst = DataFirst::get();
+        $dataSecond = DataSecond::get();
+
+        return view('pages.admin.admin-table', compact('responden', 'dataFirst', 'dataSecond'));
     }
 }

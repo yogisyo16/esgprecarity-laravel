@@ -24,8 +24,6 @@
         @csrf
         <fieldset class="fieldset w-xs bg-gray-800 border border-base-300 p-4 rounded-box gap-2">
             <legend class="fieldset-legend font-arvo text-3xl font-bold">Login</legend>
-            <label class="fieldset-label">{{ __('messages.username') }}</label>
-            <input type="text" name="name" class="input" placeholder="Admin" />
             @error('name')
                 <div role="alert" class="alert alert-error mb-3 md:mb-5" id="alert-name">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 shrink-0 stroke-current" fill="none" viewBox="0 0 24 24">
@@ -35,13 +33,14 @@
                     <button type="button" class="btn btn-sm" id="close-alert-name">Close</button>
                 </div>
             @enderror
+            <label class="fieldset-label">{{ __('messages.username') }}</label>
+            <input type="text" name="name" class="input" placeholder="Admin" />
             <label class="fieldset-label">{{ __('messages.password') }}</label>
             <input type="password" name="password" id="password" class="input" placeholder="{{ __('messages.password_placeholder') }}" />
             <div class="flex flex-row items-center">
                 <input type="checkbox" id="password-toggle" class="toggle toggle-warning mr-2" />
                 <span>{{ __('messages.show_password') }}</span>
             </div>
-            
             <div class="flex flex-row justify-between relative">
                 <details class="relative">
                     <summary class="btn btn-outline mr-2">Language: {{ __('messages.language') }}</summary>

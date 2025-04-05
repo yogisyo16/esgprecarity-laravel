@@ -8,7 +8,8 @@ export default defineConfig({
             input: [
                 'resources/css/app.css', 
                 'resources/js/app.js',
-                'resources/js/validation-data.js'
+                'resources/js/validation-data.js',
+                'resources/js/datatable.js',
             ],
             refresh: true,
         }),
