@@ -1,7 +1,7 @@
 @extends('layouts.admin.layout-admin-dashboard')
 
 @section('title-name')
-    Login Admin
+    Login {{ Auth::user()->name }}
 @endsection
 
 @push('logout-user')

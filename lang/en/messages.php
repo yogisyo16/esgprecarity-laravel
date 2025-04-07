@@ -127,6 +127,7 @@ return [
     'data' => 'Data',
     'dashboard_table' => 'Responden Table',
     'menu_table' => 'Data Table',
+    
     'admin_question_1' => 'Q1',
     'admin_question_2' => 'Q2',
     'admin_question_3' => 'Q3',

@@ -47,9 +47,17 @@ class RespondenController extends Controller
             'education_responden' => 'required',
         ]);
 
-        Responden::create($validated);
+        $responden = Responden::create($validated);
         
-        $id_responden = Responden::get()->last()->id;
+        $id_responden = $responden->id;
+
+        DataFirst::create([
+            'responden_id' => $id_responden
+        ]);
+
+        DataSecond::create([
+            'responden_id' => $id_responden
+        ]);
 
         $existingData = $request->session()->get('formData', []);
 
@@ -103,42 +111,95 @@ class RespondenController extends Controller
         return redirect()->route('showQuestionPage2');
     }
 
-    public function savedQuestionPage2(Request $request)
+    public function savedQuestionBackPage1(Request $request)
     {
-        $formData = $request->session()->get('formData');
-
-        $validated = $request->validate([
-            'data_que_eight' => 'required',
-            'data_que_nine' => 'required',
-            'data_que_ten' => 'required',
-            'data_que_eleven' => 'required',
-            'data_que_twelve' => 'required',
-            'data_que_thirteen' => 'required',
-            'data_que_fourteen' => 'required',
-            'data_que_fifteen' => 'required',
-            'data_que_sixteen' => 'required',
-            'data_que_seventeen' => 'required',
-            'data_que_eighteen' => 'required',
-            'data_que_nineteen' => 'required',
-            'data_que_twenty' => 'required',
-            'data_que_twentyone' => 'required',
-        ]);
-
         $formData = array_merge(
             $request->session()->get('formData', []),
-            $validated
+            $request->all()
         );
 
         $request->session()->put('formData', $formData);
 
-        $look_data = DataFirst::create($formData);
+        return redirect()->route('showQuestionPage1');
+    }
 
-        // dd([
-        //     $look_data,
-        //     'formData' => $formData
-        // ]);
+    public function savedQuestionPage2(Request $request)
+    {
+        $action = $request->input('button_action');
 
-        return redirect()->route('page7ShowData');
+        if($action == 'back') {
+
+            $formData = array_merge(
+                $request->session()->get('formData', []),
+                $request->all()
+            );
+
+            $request->session()->put('formData', $formData);
+
+            return redirect()->route('showQuestionPage1');
+
+        } elseif ($action == 'next') {
+            $formData = $request->session()->get('formData');
+
+            $validated = $request->validate([
+                'data_que_eight' => 'required',
+                'data_que_nine' => 'required',
+                'data_que_ten' => 'required',
+                'data_que_eleven' => 'required',
+                'data_que_twelve' => 'required',
+                'data_que_thirteen' => 'required',
+                'data_que_fourteen' => 'required',
+                'data_que_fifteen' => 'required',
+                'data_que_sixteen' => 'required',
+                'data_que_seventeen' => 'required',
+                'data_que_eighteen' => 'required',
+                'data_que_nineteen' => 'required',
+                'data_que_twenty' => 'required',
+                'data_que_twentyone' => 'required',
+            ]);
+
+            $formData = array_merge(
+                $request->session()->get('formData', []),
+                $validated
+            );
+
+            $request->session()->put('formData', $formData);
+
+
+            $id_responden = $request->session()->get('formData.responden_id');
+
+            DataFirst::where('responden_id', $id_responden)
+                ->update([
+                    'data_que_one' => $formData['data_que_one'],
+                    'data_que_two' => $formData['data_que_two'],
+                    'data_que_three' => $formData['data_que_three'],
+                    'data_que_four' => $formData['data_que_four'],
+                    'data_que_five' => $formData['data_que_five'],
+                    'data_que_six' => $formData['data_que_six'],
+                    'data_que_seven' => $formData['data_que_seven'],
+                    'data_que_eight' => $formData['data_que_eight'],
+                    'data_que_nine' => $formData['data_que_nine'],
+                    'data_que_ten' => $formData['data_que_ten'],
+                    'data_que_eleven' => $formData['data_que_eleven'],
+                    'data_que_twelve' => $formData['data_que_twelve'],
+                    'data_que_thirteen' => $formData['data_que_thirteen'],
+                    'data_que_fourteen' => $formData['data_que_fourteen'],
+                    'data_que_fifteen' => $formData['data_que_fifteen'],
+                    'data_que_sixteen' => $formData['data_que_sixteen'],
+                    'data_que_seventeen' => $formData['data_que_seventeen'],
+                    'data_que_eighteen' => $formData['data_que_eighteen'],
+                    'data_que_nineteen' => $formData['data_que_nineteen'],
+                    'data_que_twenty' => $formData['data_que_twenty'],
+                    'data_que_twentyone' => $formData['data_que_twentyone'],
+                ]);
+
+            // dd([
+            //     $look_data,
+            //     'formData' => $formData
+            // ]);
+
+            return redirect()->route('page7ShowData');
+        }
     }
 
     public function page7ShowData()
@@ -197,9 +258,15 @@ class RespondenController extends Controller
             ]
         );
         
-        DataSecond::create($dataToSave);
+        DataSecond::where('responden_id', $responden_id)
+            ->update(
+                [
+                    'nominal_answer' => $dataToSave['nominal_answer'],
+                    'value_answer' => $dataToSave['value_answer']
+                ]
+            );
 
-        return redirect()->route('respondenShowData');
+        return redirect()->route('pageEndQuestionnaire');
     }
 
     public function pageYesInvestmentData()
@@ -225,9 +292,15 @@ class RespondenController extends Controller
             ]
         );
 
-        DataSecond::create($dataToSave);
+        DataSecond::where('responden_id', $responden_id)
+            ->update(
+                [
+                    'nominal_answer' => $dataToSave['nominal_answer'],
+                    'value_answer' => $dataToSave['value_answer']
+                ]
+            );
 
-        return redirect()->route('respondenShowData');
+        return redirect()->route('pageEndQuestionnaire');
     }
 
     public function pageEndQuestionnaire()

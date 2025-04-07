@@ -16,21 +16,21 @@
                 <div class="flex flex-row items-center bg-green-700 rounded-full p-8 md:flex-col">
                     <p class="flex flex-row items-center p-1.5 gap-2.5 aspect-square rounded-full">
                         $200
-                        <input type="radio" name="nominal_answer" value="200" class="radio" 
+                        <input type="radio" name="nominal_answer" value="$200" class="radio" 
                         {{ old('nominal_answer', $formData['nominal_answer'] ?? '') === '$200' ? 'checked' : '' }}/>
                     </p>
                 </div>
                 <div class="flex flex-row items-center bg-green-700 rounded-full p-8 md:flex-col">
                     <p class="flex flex-row items-center p-1.5 gap-2.5 aspect-square rounded-full">
                         $180
-                        <input type="radio" name="nominal_answer" value="180" class="radio" 
+                        <input type="radio" name="nominal_answer" value="$180" class="radio" 
                         {{ old('nominal_answer', $formData['nominal_answer'] ?? '') === '$180' ? 'checked' : '' }}/>
                     </p>
                 </div>
                 <div class="flex flex-row items-center bg-green-700 rounded-full p-8 md:flex-col">
                     <p class="flex flex-row items-center p-1.5 gap-2.5 aspect-square rounded-full">
                         $150
-                        <input type="radio" name="nominal_answer" value="150" class="radio" 
+                        <input type="radio" name="nominal_answer" value="$150" class="radio" 
                         {{ old('nominal_answer', $formData['nominal_answer'] ?? '') === '$150' ? 'checked' : '' }}/>
                     </p>
                 </div>
@@ -39,14 +39,14 @@
                 <div class="flex flex-row items-center bg-green-700 rounded-full p-8 md:flex-col">
                     <p class="flex flex-row items-center p-1.5 gap-2.5 aspect-square rounded-full">
                         $130
-                        <input type="radio" name="nominal_answer" value="130" class="radio" 
+                        <input type="radio" name="nominal_answer" value="$130" class="radio" 
                         {{ old('nominal_answer', $formData['nominal_answer'] ?? '') === '$130' ? 'checked' : '' }}/>
                     </p>
                 </div>
                 <div class="flex flex-row items-center bg-green-700 rounded-full p-8 md:flex-col">
                     <p class="flex flex-row items-center p-1.5 gap-2.5 aspect-square rounded-full">
                         $100
-                        <input type="radio" name="nominal_answer" value="100" class="radio" 
+                        <input type="radio" name="nominal_answer" value="$100" class="radio" 
                         {{ old('nominal_answer', $formData['nominal_answer'] ?? '') === '$100' ? 'checked' : '' }}/>
                     </p>
                 </div>

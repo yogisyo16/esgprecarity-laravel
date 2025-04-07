@@ -16,7 +16,7 @@
     <div class="flex flex-col min-w-max min-h-screen bg-bodyGreen text-white">
         <div class="navbar bg-navbarGreen shadow-md">
             <div class="flex-1">
-                <a class="btn btn-ghost text-3xl">Esgprecarity</a>
+                <a class="btn btn-ghost text-2xl">Esgprecarity</a>
             </div>
             <div class="flex-none">
                 @stack('logout-user')

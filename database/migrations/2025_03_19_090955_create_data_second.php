@@ -17,8 +17,8 @@ return new class extends Migration
             $table->bigInteger('responden_id')->unsigned()->index()->nullable();
             $table->foreign('responden_id')->references('id')->on('responden_data')->onDelete('cascade');
             
-            $table->string('value_answer');
-            $table->string('nominal_answer');
+            $table->string('value_answer')->nullable();
+            $table->string('nominal_answer')->nullable();
             $table->timestamps();
         });
     }

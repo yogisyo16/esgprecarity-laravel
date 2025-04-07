@@ -41,6 +41,8 @@ Route::middleware(['auth'])->prefix('V9e65vNfipHCDGD/private')->group(function (
     Route::post('/logout-auth', [AdminController::class, 'adminLogout'])->name('adminLogout');
     Route::get('/dashboard', [AdminController::class, 'adminDashboardShow'])->name('adminDashboardShow');
     Route::get('/dashboard/table', [AdminController::class, 'adminShowTable'])->name('adminShowTable');
+    Route::get('/table/export/excel', [AdminController::class, 'exportExcel'])->name('exportExcel');
+    Route::get('/table/export/pdf', [AdminController::class, 'exportPdf'])->name('exportPdf');
 });
 
 Route::get('change', [LanguageController::class, 'change']);

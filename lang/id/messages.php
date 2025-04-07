@@ -103,9 +103,9 @@ return [
     'instruction_list_5' => 'Berikut ini informasi terkait dengan Laporan Posisi Keuangan dan kegiatan reklamasi tahun 2023 dan 2022.',
 
     //image 1 and 2
-    'image_money' => 'images/vian-mining-co-english.png',
+    'image_money' => 'images/vian-mining-co-indonesia.png',
     'table_title_image' => 'Table of Reclamation Activities in 2023 Vian Mining Co.',
-    'image_table' => 'images/table-vian-mining-co-english.png',
+    'image_table' => 'images/table-vian-mining-co-indonesia.png',
 
     //question after list and image
     'essay_question_1' => 'Sebagai seorang CEO anda memperoleh kompensasi setiap tahunnya sebesar $387 yang diperoleh dari 15% laba bersih perusahaan',

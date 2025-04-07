@@ -2,12 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\Exports\RespondenExport;
+use App\Exports\RespondenViewExport;
 use App\Models\DataFirst;
 use App\Models\DataSecond;
 use App\Models\Responden;
 use App\Models\User;
+use Barryvdh\DomPDF\Facade\Pdf;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Maatwebsite\Excel\Facades\Excel;
 
 class AdminController extends Controller
 {
@@ -72,5 +76,28 @@ class AdminController extends Controller
         $dataSecond = DataSecond::get();
 
         return view('pages.admin.admin-table', compact('responden', 'dataFirst', 'dataSecond'));
+    }
+
+    public function exportExcel()
+    {
+        return Excel::download(new RespondenExport, 'responden_data.xlsx');
+    }
+
+    public function exportPdf()
+    {
+        $responden = Responden::with(['DataFirst', 'DataSecond'])->get();
+        $pdf = PDF::loadView('pages.admin.export-file.table-pdf', compact('responden'))
+            ->setPaper('a4', 'landscape')
+            ->setOption([
+                'isPhpEnabled' => true,
+                'isHtml5ParserEnabled' => true,
+                'isRemoteEnabled' => true,
+                'margin-top' => 0,
+                'margin-bottom' => 0,
+                'margin-left' => 0,
+                'margin-right' => 0
+            ]);
+
+        return $pdf->download('responden_data.pdf');
     }
 }

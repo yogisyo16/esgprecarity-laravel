@@ -3,7 +3,7 @@
 @section('content')
     <div class="flex flex-col justify-center items-center gap-6 max-w-auto transition-opacity opacity-100 duration-750 starting:opacity-0 md:items-center md:gap-5">
         <div class="flex flex-col items-center gap-4 mx-4 md:items-center md:text-justify">
-            <form method="POST" action="{{ route('savedQuestionPage2') }}" class="container flex flex-col font-arvo text-start justify-start items-start px-4 py-4 rounded-lg md:justify-center md:items-center md:px-8 md:py-6">
+            <form method="POST" id="formQuestion" action="{{ route('savedQuestionPage2') }}" class="container flex flex-col font-arvo text-start justify-start items-start px-4 py-4 rounded-lg md:justify-center md:items-center md:px-8 md:py-6">
                 @csrf
                 <div class="flex flex-col items-start md:items-center">
                     <p><b class="mr-1">1.</b>{{ __('messages.survey_question_8') }}</p>
@@ -594,8 +594,8 @@
                     </div>
                 </div>
                 <div class="self-center my-0 md:self-center md:my-4">
-                    <a class="btn btn-outline mr-10 md:mr-0" href="{{ route('showQuestionPage1') }}">{{ __('messages.back') }}</a>
-                    <button type="submit" class="btn btn-outline ml-10 md:mr-0">{{ __('messages.next') }}</button>
+                    <button type="submit" class="btn btn-outline mr-10 md:mr-0" name="button_action" value="back">{{ __('messages.back') }}</button>
+                    <button type="submit" class="btn btn-outline ml-10 md:mr-0" name="button_action" value="next">{{ __('messages.next') }}</button>
                 </div>
             </form>
         </div>

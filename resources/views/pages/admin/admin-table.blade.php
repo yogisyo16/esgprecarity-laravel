@@ -1,7 +1,7 @@
 @extends('layouts.admin.layout-admin-dashboard')
 
 @section('title-name')
-    Login Admin
+    Hello {{ Auth::user()->name }}
 @endsection
 
 @push('logout-user')
@@ -41,7 +41,7 @@
     <div class="flex flex-col gap-6 transition-opacity opacity-100 duration-750 starting:opacity-0 md:gap-5">
         <div class="flex flex-col text-center gap-2 md:justify-center">
             <h1 class="font-arvo font-bold text-3xl">
-                {{ __('messages.dashboard') }}
+                {{ __('messages.menu_table') }}
             </h1>
         </div>
         <div class="flex flex-col items-center gap-2 md:gap-4">
@@ -50,14 +50,17 @@
                 <table id="myTable" class="display font-arvo bg-green-800 border-black border-2">
                     <thead>
                         <tr>
-                            <th colspan="2">
+                            <th colspan="3">
                                 
                             </th>
                             <th colspan="7">
-                                Cognitive Deep State
+                                Cognitive Deep State (Q1-Q7)
                             </th>
-                            <th colspan="15">
-                                Environmentalism
+                            <th colspan="14">
+                                Environmentalism (Q8-Q21)
+                            </th>
+                            <th colspan="2">
+                                Precariat
                             </th>
                         </tr>
                         <tr>
@@ -85,6 +88,8 @@
                             <th>{{ __('messages.admin_question_19') }}</th>
                             <th>{{ __('messages.admin_question_20') }}</th>
                             <th>{{ __('messages.admin_question_21') }}</th>
+                            <th>Yes</th>
+                            <th>No</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -115,11 +120,35 @@
                                     <td>{{ $dataResponden->data_que_nineteen}}</td>
                                     <td>{{ $dataResponden->data_que_twenty}}</td>
                                     <td>{{ $dataResponden->data_que_twentyone}}</td>
+                                    @endforeach
+                                @foreach ($repon->DataSecond as $secondData)
+                                    <td>
+                                    @if ($secondData->value_answer == 'yes')
+                                        {{ $secondData->nominal_answer }}
+                                    @else
+                                        -
+                                    @endif
+                                    </td>
+                                    <td>
+                                    @if ($secondData->value_answer == 'no')
+                                        {{ $secondData->nominal_answer }}
+                                    @else
+                                        -
+                                    @endif
+                                    </td>
                                 @endforeach
                             </tr>
                         @endforeach
                     </tbody>
                 </table>
+                <div class="flex flex-row justify-start gap-2">
+                    <a href="{{ route('exportExcel') }}" class="btn btn-soft btn-accent">
+                        Excel
+                    </a>
+                    <a href="{{ route('exportPdf') }}" class="btn btn-soft btn-accent">
+                        PDF
+                    </a>
+                </div>
             </div>
         </div>
     </div>
