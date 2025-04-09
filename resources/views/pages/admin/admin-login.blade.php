@@ -53,6 +53,7 @@
             </div>
         </fieldset>
     </form>
+    <a href="{{ route('respondenShowData') }}" class="btn btn-outline mt-4">Website Responden</a>
 </div>
 @endsection
 

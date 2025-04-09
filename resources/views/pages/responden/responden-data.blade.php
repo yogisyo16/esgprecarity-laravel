@@ -12,16 +12,16 @@
             </h1>
             <form method="POST" action="{{ route('getRespondenDataCollection') }}" class="container flex flex-col font-arvo border-2 border-teal-950 text-start justify-start items-start px-4 py-4 rounded-lg md:justify-center md:items-center md:text-center md:px-8 md:py-6">
                 @csrf
-                <label class="input validator">
+                <label class="input validator"data-theme="dark">
                     <span class="label">{{ __('messages.email') }}</span>
                     <input type="email" id="email_responden" name="email_responden" placeholder="{{ __('messages.placeholder') }}" value="{{ old('email_responden') }}"/>
                 </label>
                 <div class="validator-hint">Enter valid email address</div>
-                <label class="input mb-3 md:mb-5">
+                <label class="input mb-3 md:mb-5" data-theme="dark">
                     <span class="label">{{ __('messages.name') }}</span>
                     <input type="text" id="name_responden" name="name_responden" placeholder="{{ __('messages.placeholder') }}"/>
                 </label>
-                <label class="select mb-3 md:mb-5">
+                <label class="select mb-3 md:mb-5" data-theme="dark">
                     <span class="label">{{ __('messages.gender') }}</span>
                     <select name="gender_responden" id="gender_responden">
                         <option value="#">{{ __('messages.placeholder_select') }}</option>
@@ -38,19 +38,19 @@
                         <button class="btn btn-sm">Close</button>
                     </div>
                 @enderror
-                <label class="input mb-3 md:mb-5">
+                <label class="input mb-3 md:mb-5" data-theme="dark">
                     <span class="label">{{ __('messages.age') }}</span>
                     <input type="text" id="age_responden" name="age_responden" placeholder="{{ __('messages.placeholder') }}" minlength="1" maxlength="2" onkeypress="return isNumber(event)"/>
                 </label>
-                <label class="input mb-3 md:mb-5">
+                <label class="input mb-3 md:mb-5" data-theme="dark">
                     <span class="label">{{ __('messages.affiliation') }}</span>
                     <input type="text" id="affiliation_responden" name="affiliation_responden" placeholder="{{ __('messages.placeholder') }}"/>
                 </label>
-                <label class="input mb-3 md:mb-5">
+                <label class="input mb-3 md:mb-5" data-theme="dark">
                     <span class="label">{{ __('messages.job') }}</span>
                     <input type="text" id="job_responden" name="job_responden" placeholder="{{ __('messages.placeholder') }}"/>
                 </label>
-                <label class="select mb-3 md:mb-5">
+                <label class="select mb-3 md:mb-5" data-theme="dark">
                     <span class="label">{{ __('messages.education') }}</span>
                     <select name="education_responden" id="education_responden">
                         <option value="#">{{ __('messages.placeholder_select') }}</option>

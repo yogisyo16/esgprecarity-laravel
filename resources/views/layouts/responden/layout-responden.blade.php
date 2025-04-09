@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html data-theme="cupcake">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +20,7 @@
                 @stack('language')
             </div>
         </div>
-        <div class="flex flex-1 justify-center m-2 md:m-10">
+        <div class="flex flex-1 justify-center m-2 md:m-10 md:text-xl">
             @yield('content')
             @stack('scripts')
         </div>
