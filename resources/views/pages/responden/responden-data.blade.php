@@ -17,10 +17,12 @@
                     <input type="email" id="email_responden" name="email_responden" placeholder="{{ __('messages.placeholder') }}" value="{{ old('email_responden') }}"/>
                 </label>
                 <div class="validator-hint">Enter valid email address</div>
+
                 <label class="input mb-3 md:mb-5" data-theme="dark">
                     <span class="label">{{ __('messages.name') }}</span>
-                    <input type="text" id="name_responden" name="name_responden" placeholder="{{ __('messages.placeholder') }}"/>
+                    <input type="text" id="name_responden" name="name_responden" placeholder="{{ __('messages.placeholder') }}" onkeypress="return isLetter(event)"/>
                 </label>
+
                 <label class="select mb-3 md:mb-5" data-theme="dark">
                     <span class="label">{{ __('messages.gender') }}</span>
                     <select name="gender_responden" id="gender_responden">
@@ -30,26 +32,30 @@
                     </select>                    
                 </label>
                 @error('gender_responden')
-                    <div role="alert" class="alert alert-error mb-3 md:mb-5">
+                    <div role="alert" class="alert alert-error mb-3 md:mb-5" id="alert-gender">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 shrink-0 stroke-current" fill="none" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                         <span>{{ __('messages.error_gender') }}</span>
-                        <button class="btn btn-sm">Close</button>
+                        <button type="button" class="btn btn-sm" id="close-alert-gender">Close</button>
                     </div>
                 @enderror
+
                 <label class="input mb-3 md:mb-5" data-theme="dark">
                     <span class="label">{{ __('messages.age') }}</span>
                     <input type="text" id="age_responden" name="age_responden" placeholder="{{ __('messages.placeholder') }}" minlength="1" maxlength="2" onkeypress="return isNumber(event)"/>
                 </label>
+
                 <label class="input mb-3 md:mb-5" data-theme="dark">
                     <span class="label">{{ __('messages.affiliation') }}</span>
                     <input type="text" id="affiliation_responden" name="affiliation_responden" placeholder="{{ __('messages.placeholder') }}"/>
                 </label>
+
                 <label class="input mb-3 md:mb-5" data-theme="dark">
                     <span class="label">{{ __('messages.job') }}</span>
                     <input type="text" id="job_responden" name="job_responden" placeholder="{{ __('messages.placeholder') }}"/>
                 </label>
+                
                 <label class="select mb-3 md:mb-5" data-theme="dark">
                     <span class="label">{{ __('messages.education') }}</span>
                     <select name="education_responden" id="education_responden">
@@ -79,4 +85,14 @@
 
 @push('scripts')
     @vite(['resources/js/validation-data.js'])
+    <script>
+        const closeAlertName = document.getElementById('close-alert-gender');
+        const alertName = document.getElementById('alert-gender');
+        closeAlertName.addEventListener('click', () => {
+            alertName.classList.add('hide');
+            setTimeout(() => {
+                alertName.style.display = 'none';
+            }, 300);
+        });
+    </script>
 @endpush

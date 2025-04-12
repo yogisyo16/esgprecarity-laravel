@@ -33,4 +33,20 @@ function isNumber(evt) {
     return true;
 }
 
-window.isNumber = isNumber;
+function isLetter(evt) {
+    evt = evt || window.event;
+    var charCode = (evt.which) ? evt.which : evt.keyCode;
+    if (!(charCode >= 65 && charCode <= 90) && 
+        !(charCode >= 97 && charCode <= 122) &&
+        charCode !== 32 &&    // Space
+        charCode !== 8 &&     // Backspace
+        charCode !== 9 &&     // Tab
+        charCode !== 13 &&    // Enter
+        !(charCode >= 37 && charCode <= 40)) {  // Arrow keys
+        evt.preventDefault();
+        return false;
+    }
+    return true;
+}
+
+window.isLetter = isLetter;

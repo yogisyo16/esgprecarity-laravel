@@ -13,42 +13,42 @@
             </ul>
             <h1 class="font-arvo font-bold text-md text-center text-black bg-white rounded-full p-4 md:mb-4" name="value_answer" value="yes">{{ __('messages.last_question_yes') }}</h1>
             <div class="join flex flex-col my-2 p-2 gap-4 md:flex-row md:gap-20">
-                <div class="flex flex-row items-center bg-green-700 rounded-full p-8 md:flex-col">
-                    <p class="flex flex-row items-center p-1.5 gap-2.5 aspect-square rounded-full">
+                <div class="flex flex-row items-center bg-green-700 rounded-full p-4 md:flex-col cursor-pointer">
+                    <label class="flex flex-row items-center p-1.5 gap-2.5 aspect-square rounded-full w-full h-full cursor-pointer">
                         $400
                         <input type="radio" name="nominal_answer" value="$400" class="radio" 
                         {{ old('nominal_answer', $formData['nominal_answer'] ?? '') === '$400' ? 'checked' : '' }}/>
-                    </p>
+                    </label>
                 </div>
-                <div class="flex flex-row items-center bg-green-700 rounded-full p-8 md:flex-col">
-                    <p class="flex flex-row items-center p-1.5 gap-2.5 aspect-square rounded-full">
+                <div class="flex flex-row items-center bg-green-700 rounded-full p-4 md:flex-col cursor-pointer">
+                    <label class="flex flex-row items-center p-1.5 gap-2.5 aspect-square rounded-full w-full h-full cursor-pointer">
                         $380
                         <input type="radio" name="nominal_answer" value="$380" class="radio" 
                         {{ old('nominal_answer', $formData['nominal_answer'] ?? '') === '$380' ? 'checked' : '' }}/>
-                    </p>
+                    </label>
                 </div>
-                <div class="flex flex-row items-center bg-green-700 rounded-full p-8 md:flex-col">
-                    <p class="flex flex-row items-center p-1.5 gap-2.5 aspect-square rounded-full">
+                <div class="flex flex-row items-center bg-green-700 rounded-full p-4 md:flex-col cursor-pointer">
+                    <label class="flex flex-row items-center p-1.5 gap-2.5 aspect-square rounded-full w-full h-full cursor-pointer">
                         $350
                         <input type="radio" name="nominal_answer" value="$350" class="radio" 
                         {{ old('nominal_answer', $formData['nominal_answer'] ?? '') === '$350' ? 'checked' : '' }}/>
-                    </p>
+                    </label>
                 </div>
             </div>
             <div class="join flex flex-col my-2 p-2 gap-4 md:flex-row md:gap-20">
-                <div class="flex flex-row items-center bg-green-700 rounded-full p-8 md:flex-col">
-                    <p class="flex flex-row items-center p-1.5 gap-2.5 aspect-square rounded-full">
+                <div class="flex flex-row items-center bg-green-700 rounded-full p-4 md:flex-col cursor-pointer">
+                    <label class="flex flex-row items-center p-1.5 gap-2.5 aspect-square rounded-full w-full h-full cursor-pointer">
                         $320
                         <input type="radio" name="nominal_answer" value="$320" class="radio" 
                         {{ old('nominal_answer', $formData['nominal_answer'] ?? '') === '$320' ? 'checked' : '' }}/>
-                    </p>
+                    </label>
                 </div>
-                <div class="flex flex-row items-center bg-green-700 rounded-full p-8 md:flex-col">
-                    <p class="flex flex-row items-center p-1.5 gap-2.5 aspect-square rounded-full">
+                <div class="flex flex-row items-center bg-green-700 rounded-full p-4 md:flex-col cursor-pointer">
+                    <label class="flex flex-row items-center p-1.5 gap-2.5 aspect-square rounded-full w-full h-full cursor-pointer">
                         $300
                         <input type="radio" name="nominal_answer" value="$300" class="radio" 
                         {{ old('nominal_answer', $formData['nominal_answer'] ?? '') === '$300' ? 'checked' : '' }}/>
-                    </p>
+                    </label>
                 </div>
             </div>
             <div class="self-center my-0 md:self-end md:my-4">

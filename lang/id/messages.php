@@ -3,9 +3,10 @@
 return [
 
     'title' => 'SELAMAT DATANG DI PENELITIAN KAMI',
-    'disclaimer' => 'Semua data dan informasi yang terkumpul akan digunakan secara eksklusif untuk tujuan penelitian dan tidak akan di sebarluaskan',
+    'disclaimer' => 'Semua data dan informasi yang terkumpul akan digunakan secara eksklusif untuk tujuan penelitian dan tidak akan disebarluaskan',
     'next' => 'Selanjutnya',
     'back' => 'Kembali',
+    'language_title' => 'Bahasa',
     'language' => 'Indonesia',
     'no' => 'TIDAK',
     'yes' => 'YA',

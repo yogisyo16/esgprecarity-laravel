@@ -6,6 +6,7 @@ return [
     'disclaimer' => 'All collected data and information will be used exclusively for research purposes and will not be shared or distributed.',
     'next' => 'Next',
     'back' => 'Back',
+    'language_title' => 'Language',
     'language' => 'English',
     'no' => 'NO',
     'yes' => 'YES',
