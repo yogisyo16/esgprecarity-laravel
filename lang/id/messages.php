@@ -114,7 +114,7 @@ return [
     'essay_question_3' => 'Dari informasi yang tersaji, apakah anda akan melakukan investasi tambahan dalam aktivitas ESG?',
 
     //last question no and yes
-    'last_question' => 'Berapa nilai investasi ESG yang akan ada rencanakan pada tahun 2024 jika',
+    'last_question' => 'Berapa nilai investasi ESG yang akan anda rencanakan pada tahun 2024 jika',
     'last_question_no' => 'TIDAK',
     'last_question_yes' => 'YA',
 

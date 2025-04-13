@@ -16,7 +16,7 @@
                 </p>
             </div>
             <div class="items-center order-last gap-2 md:items-center md:order-none">
-                <img src="/images/merger-thank-you-bubble-resize-sm.png" class="w-auto h-96 md:h-full" alt="{{ __('messages.survey_title') }}">
+                <img src="/images/thank-you-for.png" class="w-auto h-96 md:h-full" alt="{{ __('messages.survey_title') }}">
             </div>
         </div>
         <div class="font-arvo">

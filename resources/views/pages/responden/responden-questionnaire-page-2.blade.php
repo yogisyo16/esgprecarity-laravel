@@ -1,11 +1,15 @@
 @extends('layouts.responden.layout-responden')
 
+@section('title-name')
+    Esgprecarity
+@endsection
+
 @section('content')
     <div class="flex flex-col justify-center items-center gap-6 max-w-auto transition-opacity opacity-100 duration-750 starting:opacity-0 md:items-center md:gap-5">
         <div class="flex flex-col items-center gap-4 mx-4 md:items-center md:text-justify">
-            <form method="POST" id="formQuestion" action="{{ route('savedQuestionPage2') }}" class="container flex flex-col font-arvo text-start justify-justify items-start px-4 py-4 rounded-lg md:justify-center md:items-center md:text-justify md:px-8 md:py-6 md:md:w-9/12">
+            <form method="POST" id="formQuestion" action="{{ route('savedQuestionPage2') }}" class="container flex flex-col font-arvo text-start justify-justify items-start px-4 py-4 rounded-lg md:justify-center md:items-start md:text-justify md:px-8 md:py-6 md:md:w-9/12">
                 @csrf
-                <div class="flex flex-col items-start md:items-center">
+                <div class="flex flex-col items-start md:items-start">
                     <p><b class="mr-1">1.</b>{{ __('messages.survey_question_8') }}</p>
                     <div class="join flex flex-col my-2 p-2 gap-4 md:flex-row md:gap-20">
                         <div class="flex flex-row items-center mb-2 md:flex-col">
@@ -47,7 +51,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col items-start md:items-center">
+                <div class="flex flex-col items-start md:items-start">
                     <p><b class="mr-1">2.</b>{{ __('messages.survey_question_9') }}</p>
                     <div class="join flex flex-col my-2 p-2 gap-4 md:flex-row md:gap-20">
                         <div class="flex flex-row items-center mb-2 md:flex-col">
@@ -89,7 +93,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col items-start md:items-center">
+                <div class="flex flex-col items-start md:items-start">
                     <p><b class="mr-1">3.</b>{{ __('messages.survey_question_10') }}</p>
                     <div class="join flex flex-col my-2 p-2 gap-4 md:flex-row md:gap-20">
                         <div class="flex flex-row items-center mb-2 md:flex-col">
@@ -131,7 +135,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col items-start md:items-center">
+                <div class="flex flex-col items-start md:items-start">
                     <p><b class="mr-1">4.</b>{{ __('messages.survey_question_11') }}</p>
                     <div class="join flex flex-col my-2 p-2 gap-4 md:flex-row md:gap-20">
                         <div class="flex flex-row items-center mb-2 md:flex-col">
@@ -173,7 +177,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col items-start md:items-center">
+                <div class="flex flex-col items-start md:items-start">
                     <p><b class="mr-1">5.</b>{{ __('messages.survey_question_12') }}</p>
                     <div class="join flex flex-col my-2 p-2 gap-4 md:flex-row md:gap-20">
                         <div class="flex flex-row items-center mb-2 md:flex-col">
@@ -215,7 +219,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col items-start md:items-center">
+                <div class="flex flex-col items-start md:items-start">
                     <p><b class="mr-1">6.</b>{{ __('messages.survey_question_13') }}</p>
                     <div class="join flex flex-col my-2 p-2 gap-4 md:flex-row md:gap-20">
                         <div class="flex flex-row items-center mb-2 md:flex-col">
@@ -257,7 +261,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col items-start md:items-center">
+                <div class="flex flex-col items-start md:items-start">
                     <p><b class="mr-1">7.</b>{{ __('messages.survey_question_14') }}</p>
                     <div class="join flex flex-col my-2 p-2 gap-4 md:flex-row md:gap-20">
                         <div class="flex flex-row items-center mb-2 md:flex-col">
@@ -299,7 +303,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col items-start md:items-center">
+                <div class="flex flex-col items-start md:items-start">
                     <p><b class="mr-1">8.</b>{{ __('messages.survey_question_15') }}</p>
                     <div class="join flex flex-col my-2 p-2 gap-4 md:flex-row md:gap-20">
                         <div class="flex flex-row items-center mb-2 md:flex-col">
@@ -341,7 +345,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col items-start md:items-center">
+                <div class="flex flex-col items-start md:items-start">
                     <p><b class="mr-1">9.</b>{{ __('messages.survey_question_16') }}</p>
                     <div class="join flex flex-col my-2 p-2 gap-4 md:flex-row md:gap-20">
                         <div class="flex flex-row items-center mb-2 md:flex-col">
@@ -383,7 +387,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col items-start md:items-center">
+                <div class="flex flex-col items-start md:items-start">
                     <p><b class="mr-1">10.</b>{{ __('messages.survey_question_17') }}</p>
                     <div class="join flex flex-col my-2 p-2 gap-4 md:flex-row md:gap-20">
                         <div class="flex flex-row items-center mb-2 md:flex-col">
@@ -425,7 +429,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col items-start md:items-center">
+                <div class="flex flex-col items-start md:items-start">
                     <p><b class="mr-1">11.</b>{{ __('messages.survey_question_18') }}</p>
                     <div class="join flex flex-col my-2 p-2 gap-4 md:flex-row md:gap-20">
                         <div class="flex flex-row items-center mb-2 md:flex-col">
@@ -467,7 +471,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col items-start md:items-center">
+                <div class="flex flex-col items-start md:items-start">
                     <p><b class="mr-1">12.</b>{{ __('messages.survey_question_19') }}</p>
                     <div class="join flex flex-col my-2 p-2 gap-4 md:flex-row md:gap-20">
                         <div class="flex flex-row items-center mb-2 md:flex-col">
@@ -509,7 +513,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col items-start md:items-center">
+                <div class="flex flex-col items-start md:items-start">
                     <p><b class="mr-1">13.</b>{{ __('messages.survey_question_20') }}</p>
                     <div class="join flex flex-col my-2 p-2 gap-4 md:flex-row md:gap-20">
                         <div class="flex flex-row items-center mb-2 md:flex-col">
@@ -551,7 +555,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col items-start md:items-center">
+                <div class="flex flex-col items-start md:items-start">
                     <p><b class="mr-1">14.</b>{{ __('messages.survey_question_21') }}</p>
                     <div class="join flex flex-col my-2 p-2 gap-4 md:flex-row md:gap-20">
                         <div class="flex flex-row items-center mb-2 md:flex-col">
