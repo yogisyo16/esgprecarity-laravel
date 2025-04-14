@@ -19,11 +19,11 @@
 @endpush
 
 @section('content')
-<div class="flex flex-col items-center justify-center" data-theme="dark">
+<div class="flex flex-col items-center justify-center">
     <form method="POST" action="{{ route('adminLoginAuth') }}" class="relative">
         @csrf
         <fieldset class="fieldset w-xs bg-gray-800 border border-base-300 p-4 rounded-box gap-2">
-            <legend class="fieldset-legend font-arvo text-3xl font-bold">Login</legend>
+            <legend class="fieldset-legend font-arvo text-3xl font-bold text-white">Login</legend>
             @error('name')
                 <div role="alert" class="alert alert-error mb-3 md:mb-5" id="alert-name">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 shrink-0 stroke-current" fill="none" viewBox="0 0 24 24">
@@ -34,19 +34,29 @@
                 </div>
             @enderror
             <label class="fieldset-label">{{ __('messages.username') }}</label>
-            <input type="text" name="name" class="input" placeholder="Admin" />
+            <input type="text" name="name" class="input" placeholder="Admin" data-theme="dark"/>
             <label class="fieldset-label">{{ __('messages.password') }}</label>
-            <input type="password" name="password" id="password" class="input" placeholder="{{ __('messages.password_placeholder') }}" />
+            <input type="password" name="password" id="password" class="input" placeholder="{{ __('messages.password_placeholder') }}" data-theme="dark"/>
             <div class="flex flex-row items-center">
                 <input type="checkbox" id="password-toggle" class="toggle toggle-warning mr-2" />
                 <span>{{ __('messages.show_password') }}</span>
             </div>
             <div class="flex flex-row justify-between relative">
-                <details class="relative">
-                    <summary class="btn btn-outline mr-2">Language: {{ __('messages.language') }}</summary>
-                    <ul class="menu absolute bg-base-100 rounded-box z-50 w-52 p-2 shadow-sm mt-1">
-                        <li><a href="{{ route('set.language', 'en') }}">English</a></li>
-                        <li><a href="{{ route('set.language', 'id') }}">Indonesia</a></li>
+                <details class="dropdown">
+                    <summary class="btn btn-outline flex-wrap w-26 pb-10 md:w-auto md:pb-0 mr-6 md:mr-4">
+                        {{ __('messages.language_title') }}: {{ __('messages.language') }}
+                    </summary>
+                    <ul class="menu dropdown-content bg-base-100 rounded-box z-1 w-40 p-2 shadow-sm" data-theme="dark">
+                        <li>
+                            <a href="{{ route('set.language', 'en') }}">
+                                English
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ route('set.language', 'id') }}">
+                                Indonesia
+                            </a>
+                        </li>
                     </ul>
                 </details>
                 <button type="submit" class="btn btn-outline ml-10 md:mr-0">{{ __('messages.login') }}</button>
