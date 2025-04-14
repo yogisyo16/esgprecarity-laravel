@@ -20,6 +20,8 @@ return [
     'purposes' => 'Purpose of the Study',
     'explaination' => 'This Study aims to explore how CEOs in developing countries make ESG investments within the context of political supremacy.',
 
+    'flag_languages' => 'images/flag_england.png',
+
     'terms_and_conditions' => 'Explanation and Agreement',
     'rules_1' => 'I acknowledge that participation is voluntary.',
     'rules_2' => 'The data collected in this research will remain confidential and be used solely for scientific purposes.',

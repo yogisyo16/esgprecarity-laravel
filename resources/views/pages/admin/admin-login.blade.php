@@ -19,7 +19,7 @@
 @endpush
 
 @section('content')
-<div class="flex flex-col items-center justify-center">
+<div class="flex flex-col items-center justify-center" data-theme="dark">
     <form method="POST" action="{{ route('adminLoginAuth') }}" class="relative">
         @csrf
         <fieldset class="fieldset w-xs bg-gray-800 border border-base-300 p-4 rounded-box gap-2">

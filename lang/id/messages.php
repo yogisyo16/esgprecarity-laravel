@@ -21,6 +21,8 @@ return [
     'purposes' => 'Tujuan Penelitian',
     'explaination' => 'Penelitian ini bertujuan untuk memberikan pemahaman tentang bagaimana CEO di negara berkembang melakukan investasi ESG yang menempatkan dalam konteks supremasi politik.',
 
+    'flag_languages' => 'images/flag_indonesia.png',
+
     'title-page-2'=> 'Penjelasan dan Persetujuan',
     'terms_and_conditions' => 'Penjelasan dan Persetujuan',
     'rules_1' => 'Saya memahami bahwa partisipasi ini bersifat sukarela.',

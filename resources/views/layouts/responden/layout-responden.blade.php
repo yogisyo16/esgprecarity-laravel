@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title-name')</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @stack('styles')
 </head>
 <body>
     <div class="flex flex-col min-w-full min-h-screen bg-bodyGreen md:bg-[url('/public/images/bg-canvas-2.png')] md:bg-cover md:bg-fixed text-white">
