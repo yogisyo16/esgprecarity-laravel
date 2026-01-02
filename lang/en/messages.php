@@ -110,8 +110,8 @@ return [
 
     //question after list and image
     'essay_question_1' => 'As the CEO of Vian Mining Co., your annual compensation is 15% of the Co. net profit .',
-    'essay_question_2' => 'Jika pada tahun 2024 perusahaan memperoleh laba perusahaan sebesar $4,500 dan anda memperoleh kompensasi sebesar $675',
-    'essay_question_3' => 'Dari informasi yang tersaji, apakah anda akan melakukan investasi tambahan dalam aktivitas ESG?',
+    'essay_question_2' => 'In 2024, the company achieved a net profit of $4,500, resulting in your compensation being $675.',
+    'essay_question_3' => 'Given the company’s financial performance and obligations, would you consider increasing investments in ESG activities to enhance sustainability, regulatory compliance, and long-term value creation?',
 
     //last question no and yes
     'last_question' => 'What is your projected ESG investment allocation for 2024, if (How much the ESG Investment will allocate for 2024?)',
