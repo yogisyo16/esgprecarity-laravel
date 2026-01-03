@@ -59,7 +59,7 @@
                             <th colspan="14">
                                 Environmentalism (Q8-Q21)
                             </th>
-                            <th colspan="2">
+                            <th colspan="4">
                                 Precariat
                             </th>
                         </tr>
@@ -88,6 +88,8 @@
                             <th>{{ __('messages.admin_question_19') }}</th>
                             <th>{{ __('messages.admin_question_20') }}</th>
                             <th>{{ __('messages.admin_question_21') }}</th>
+                            <th>Yes</th>
+                            <th>No</th>
                             <th>Yes</th>
                             <th>No</th>
                         </tr>
@@ -132,6 +134,20 @@
                                     <td>
                                     @if ($secondData->value_answer == 'no')
                                         {{ $secondData->nominal_answer }}
+                                    @else
+                                        -
+                                    @endif
+                                    </td>
+                                    <td>
+                                    @if ($secondData->value_answer_second == 'yes')
+                                        {{ $secondData->nominal_answer_second }}
+                                    @else
+                                        -
+                                    @endif
+                                    </td>
+                                    <td>
+                                    @if ($secondData->value_answer_second == 'no')
+                                        {{ $secondData->nominal_answer_second }}
                                     @else
                                         -
                                     @endif

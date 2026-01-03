@@ -1,60 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <meta charset="utf-8">
 </head>
 <body>
     <table>
         <thead>
             <tr>
-                <th colspan="3">
-                    
-                </th>
-                <th class="bg-blue-400" colspan="7">
-                    Cognitive Deep State (Q1-Q7)
-                </th>
-                <th class="bg-blue-400" colspan="14">
-                    Environmentalism (Q8-Q21)
-                </th>
-                <th class="bg-blue-400" colspan="2">
-                    Precariat
-                </th>
+                <th colspan="3"></th>
+                <th colspan="7" style="background-color: #4472C4; color: #ffffff;">Cognitive Deep State (Q1-Q7)</th>
+                <th colspan="14" style="background-color: #4472C4; color: #ffffff;">Environmentalism (Q8-Q21)</th>
+                <th colspan="4" style="background-color: #4472C4; color: #ffffff;">Precariat</th>
             </tr>
             <tr>
-                <th></th>
+                <th>No</th>
                 <th>{{ __('messages.email') }}</th>
                 <th>{{ __('messages.name') }}</th>
-                <th>{{ __('messages.admin_question_1') }}</th>
-                <th>{{ __('messages.admin_question_2') }}</th>
-                <th>{{ __('messages.admin_question_3') }}</th>
-                <th>{{ __('messages.admin_question_4') }}</th>
-                <th>{{ __('messages.admin_question_5') }}</th>
-                <th>{{ __('messages.admin_question_6') }}</th>
-                <th>{{ __('messages.admin_question_7') }}</th>
-                <th>{{ __('messages.admin_question_8') }}</th>
-                <th>{{ __('messages.admin_question_9') }}</th>
-                <th>{{ __('messages.admin_question_10') }}</th>
-                <th>{{ __('messages.admin_question_11') }}</th>
-                <th>{{ __('messages.admin_question_12') }}</th>
-                <th>{{ __('messages.admin_question_13') }}</th>
-                <th>{{ __('messages.admin_question_14') }}</th>
-                <th>{{ __('messages.admin_question_15') }}</th>
-                <th>{{ __('messages.admin_question_16') }}</th>
-                <th>{{ __('messages.admin_question_17') }}</th>
-                <th>{{ __('messages.admin_question_18') }}</th>
-                <th>{{ __('messages.admin_question_19') }}</th>
-                <th>{{ __('messages.admin_question_20') }}</th>
-                <th>{{ __('messages.admin_question_21') }}</th>
-                <th>Yes</th>
-                <th>No</th>
+                
+                <th>Q1</th><th>Q2</th><th>Q3</th><th>Q4</th><th>Q5</th><th>Q6</th><th>Q7</th>
+                <th>Q8</th><th>Q9</th><th>Q10</th><th>Q11</th><th>Q12</th><th>Q13</th><th>Q14</th>
+                <th>Q15</th><th>Q16</th><th>Q17</th><th>Q18</th><th>Q19</th><th>Q20</th><th>Q21</th>
+
+                <th>Yes (1)</th>
+                <th>No (1)</th>
+                <th>Yes (2)</th>
+                <th>No (2)</th>
             </tr>
         </thead>
         <tbody>
             @foreach ($respondens as $no => $repon)
-                <tr class="items-center">
+                <tr>
                     <td>{{ $no+1 }}</td>
                     <td>{{ $repon->email_responden }}</td>
                     <td>{{ $repon->name_responden }}</td>
+                    
                     @foreach ($repon->DataFirst as $dataResponden)
                         <td>{{ $dataResponden->data_que_one}}</td>
                         <td>{{ $dataResponden->data_que_two}}</td>
@@ -77,22 +56,14 @@
                         <td>{{ $dataResponden->data_que_nineteen}}</td>
                         <td>{{ $dataResponden->data_que_twenty}}</td>
                         <td>{{ $dataResponden->data_que_twentyone}}</td>
-                        @endforeach
+                    @endforeach
+
                     @foreach ($repon->DataSecond as $secondData)
-                        <td>
-                        @if ($secondData->value_answer == 'yes')
-                            {{ $secondData->nominal_answer }}
-                        @else
-                            -
-                        @endif
-                        </td>
-                        <td>
-                        @if ($secondData->value_answer == 'no')
-                            {{ $secondData->nominal_answer }}
-                        @else
-                            -
-                        @endif
-                        </td>
+                        <td>{{ $secondData->value_answer == 'yes' ? $secondData->nominal_answer : '-' }}</td>
+                        <td>{{ $secondData->value_answer == 'no' ? $secondData->nominal_answer : '-' }}</td>
+                        
+                        <td>{{ $secondData->value_answer_second == 'yes' ? $secondData->nominal_answer_second : '-' }}</td>
+                        <td>{{ $secondData->value_answer_second == 'no' ? $secondData->nominal_answer_second : '-' }}</td>
                     @endforeach
                 </tr>
             @endforeach
