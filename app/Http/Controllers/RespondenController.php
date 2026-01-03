@@ -266,7 +266,7 @@ class RespondenController extends Controller
                 ]
             );
 
-        return redirect()->route('pageEndQuestionnaire');
+        return redirect()->route('pageSecondQuestion');
     }
 
     public function pageYesInvestmentData()
@@ -297,6 +297,77 @@ class RespondenController extends Controller
                 [
                     'nominal_answer' => $dataToSave['nominal_answer'],
                     'value_answer' => $dataToSave['value_answer']
+                ]
+            );
+
+        return redirect()->route('pageSecondQuestion');
+    }
+
+    public function pageSecondQuestion()
+    {
+        return view('pages.responden.responden-act-question-second');
+    }
+
+    public function pageNoInvestmentDataSecond()
+    {
+        return view('pages.responden.responden-last-question-no-second');
+    }
+
+    public function saveNoInvestmentDataSecond(Request $request)
+    {
+        $responden_id = $request->session()->get('formData')["responden_id"];
+
+        // Validate the request
+        $validated = $request->validate([
+            'nominal_answer_second' => 'required',
+        ]);
+
+        $dataToSave = array_merge(
+            $validated, // validated input data first
+            [
+                'responden_id' => $responden_id,
+                'value_answer_second' => 'no'
+            ]
+        );
+
+        DataSecond::where('responden_id', $responden_id)
+            ->update(
+                [
+                    'nominal_answer_second' => $dataToSave['nominal_answer_second'],
+                    'value_answer_second' => $dataToSave['value_answer_second']
+                ]
+            );
+
+        return redirect()->route('pageEndQuestionnaire');
+    }
+
+    public function pageYesInvestmentDataSecond()
+    {
+        return view('pages.responden.responden-last-question-yes-second');
+    }
+
+    public function saveYesInvestmentDataSecond(Request $request)
+    {
+        $responden_id = $request->session()->get('formData')["responden_id"];
+
+        // Validate the request
+        $validated = $request->validate([
+            'nominal_answer_second' => 'required',
+        ]);
+
+        $dataToSave = array_merge(
+            $validated, // validated input data first
+            [
+                'responden_id' => $responden_id,
+                'value_answer_second' => 'yes'
+            ]
+        );
+
+        DataSecond::where('responden_id', $responden_id)
+            ->update(
+                [
+                    'nominal_answer_second' => $dataToSave['nominal_answer_second'],
+                    'value_answer_second' => $dataToSave['value_answer_second']
                 ]
             );
 

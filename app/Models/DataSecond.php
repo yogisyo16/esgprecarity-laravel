@@ -14,6 +14,8 @@ class DataSecond extends Model
         'responden_id',
         'value_answer',
         'nominal_answer',
+        'value_answer_second',
+        'nominal_answer_second',
     ];
 
     public function responden(): BelongsTo

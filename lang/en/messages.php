@@ -113,15 +113,26 @@ return [
     'essay_question_2' => 'In 2024, the company achieved a net profit of $4,500, resulting in your compensation being $675.',
     'essay_question_3' => 'Given the company’s financial performance and obligations, would you consider increasing investments in ESG activities to enhance sustainability, regulatory compliance, and long-term value creation?',
 
+    //question updated
+    'essay_question_1_second' => 'As the CEO of Vian Mining Co., your annual compensation of $587, which is devired from 30% of the company`s net profit.',
+    'essay_question_2_second' => 'In 2024, the company achieved a net profit of $6,500, resulting in your compensation being $1.350.',
+    'essay_question_3_second' => 'Given the company’s financial performance and obligations, would you consider increasing investments in ESG activities to enhance sustainability, regulatory compliance, and long-term value creation?',
+
     //last question no and yes
     'last_question' => 'What is your projected ESG investment allocation for 2024, if (How much the ESG Investment will allocate for 2024?)',
     'last_question_english' => '',
     'last_question_no' => 'NO',
     'last_question_yes' => 'YES',
 
+    // last question updated data
+    'last_question_second' => 'What is your projected ESG investment allocation for 2024, if (How much the ESG Investment will allocate for 2024?)',
+    'last_question_english_second' => '',
+    'last_question_no_second' => 'NO',
+    'last_question_yes_second' => 'YES',
+
+
     //end questionnaire
     'end_questionnaire' => 'Thank you for participate in this experiment.',
-
 
     //Admin site
     //dashboard

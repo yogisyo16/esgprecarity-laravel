@@ -30,7 +30,12 @@ Route::get('/page-13/no', [RespondenController::class, 'pageNoInvestmentData'])-
 Route::post('/page-13/no/submit-data', [RespondenController::class, 'saveNoInvestmentData'])->name('saveNoInvestmentData');
 Route::get('/page-13/yes', [RespondenController::class, 'pageYesInvestmentData'])->name('pageYesInvestmentData');
 Route::post('/page-13/yes/submit-data', [RespondenController::class, 'saveYesInvestmentData'])->name('saveYesInvestmentData');
-Route::get('/page-14', [RespondenController::class, 'pageEndQuestionnaire'])->name('pageEndQuestionnaire');
+Route::get('/page-14', [RespondenController::class, 'pageSecondQuestion'])->name('pageSecondQuestion');
+Route::get('/page-14/no', [RespondenController::class, 'pageNoInvestmentDataSecond'])->name('pageNoInvestmentDataSecond');
+Route::post('/page-14/no/submit-data', [RespondenController::class, 'saveNoInvestmentDataSecond'])->name('saveNoInvestmentDataSecond');
+Route::get('/page-14/yes', [RespondenController::class, 'pageYesInvestmentDataSecond'])->name('pageYesInvestmentDataSecond');
+Route::post('/page-14/yes/submit-data', [RespondenController::class, 'saveYesInvestmentDataSecond'])->name('saveYesInvestmentDataSecond');
+Route::get('/page-15', [RespondenController::class, 'pageEndQuestionnaire'])->name('pageEndQuestionnaire');
 //Language
 Route::get('/set-language/{locale}', [LanguageController::class, 'setLanguage'])->name('set.language');
 

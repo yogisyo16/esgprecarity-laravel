@@ -115,10 +115,20 @@ return [
     'essay_question_2' => 'Jika pada tahun 2024 perusahaan memperoleh laba perusahaan sebesar $4,500 dan anda memperoleh kompensasi sebesar $675',
     'essay_question_3' => 'Dari informasi yang tersaji, apakah anda akan melakukan investasi tambahan dalam aktivitas ESG?',
 
+    // question updated
+    'essay_question_1_second' => 'Sebagai seorang CEO anda memperoleh kompensasi setiap tahunnya sebesar $587 yang diperoleh dari 30% laba bersih perusahaan',
+    'essay_question_2_second' => 'Jika pada tahun 2024 perusahaan memperoleh laba perusahaan sebesar $6,500 dan anda memperoleh kompensasi sebesar $1.350',
+    'essay_question_3_second' => 'Dari informasi yang tersaji, apakah anda akan melakukan investasi tambahan dalam aktivitas ESG?',
+
     //last question no and yes
     'last_question' => 'Berapa nilai investasi ESG yang akan anda rencanakan pada tahun 2024 jika',
     'last_question_no' => 'TIDAK',
     'last_question_yes' => 'YA',
+
+    // last question updated data
+    'last_question_second' => 'Berapa nilai investasi ESG yang akan ada rencanakan pada tahun 2024 jika',
+    'last_question_no_second' => 'TIDAK',
+    'last_question_yes_second' => 'YA',
 
     //end questionnaire
     'end_questionnaire' => 'Terima Kasih telah berpartisipiasi dalam penelitian ini.',
