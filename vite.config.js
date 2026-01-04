@@ -8,7 +8,6 @@ export default defineConfig({
             input: [
                 'resources/css/app.css', 
                 'resources/js/app.js',
-                // Add your missing files here:
                 'resources/js/datatable.js',
                 'resources/js/validation-data.js'
             ],
