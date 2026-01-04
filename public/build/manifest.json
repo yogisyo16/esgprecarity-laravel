@@ -4,7 +4,7 @@
     "src": "public/images/bg-canvas-2.png"
   },
   "resources/css/app.css": {
-    "file": "assets/app-Dn4LxDnC.css",
+    "file": "assets/app-BahNhyzx.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
@@ -12,6 +12,18 @@
     "file": "assets/app-DspuE8pW.js",
     "name": "app",
     "src": "resources/js/app.js",
+    "isEntry": true
+  },
+  "resources/js/datatable.js": {
+    "file": "assets/datatable-RQHY7Kr7.js",
+    "name": "datatable",
+    "src": "resources/js/datatable.js",
+    "isEntry": true
+  },
+  "resources/js/validation-data.js": {
+    "file": "assets/validation-data-CSvEDiqL.js",
+    "name": "validation-data",
+    "src": "resources/js/validation-data.js",
     "isEntry": true
   }
 }
