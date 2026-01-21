@@ -29,7 +29,7 @@ return [
     'rules_2' => 'Data yang diperoleh dari penelitian ini di jaga kerahasiaannya dan hanya digunakan untuk kepentingan ilmiah.',
     'rules_3' => 'Partisipan diharapkan menggunakan perangkat laptop/komputer saat pengisian dan pengerjaan penelitian.',
     'rules_4' => 'Dengan mengklik “YA”, saya telah menyetujui pertimbangan di atas dan bersedia untuk melanjutkan proses penelitian ini sampai selesai.',
-    
+
     //not parcipate
     'no_title' => 'Terima Kasih',
     'no_answer' => 'Kami sepenuhnya menghargai keputusan Anda. Terima kasih atas tanggapannya. Jika ada hal lain yang dapat kami bantu di masa depan, jangan ragu untuk menghubungi kami.',
@@ -112,12 +112,12 @@ return [
 
     //question after list and image
     'essay_question_1' => 'Sebagai seorang CEO anda memperoleh kompensasi setiap tahunnya sebesar $387 yang diperoleh dari 15% laba bersih perusahaan',
-    'essay_question_2' => 'Jika pada tahun 2024 perusahaan memperoleh laba perusahaan sebesar $4,500 dan anda memperoleh kompensasi sebesar $675',
+    'essay_question_2' => 'Jika pada tahun 2024 perusahaan memperoleh laba perusahaan sebesar $4.500 dan anda memperoleh kompensasi sebesar $675',
     'essay_question_3' => 'Dari informasi yang tersaji, apakah anda akan melakukan investasi tambahan dalam aktivitas ESG?',
 
     // question updated
     'essay_question_1_second' => 'Sebagai seorang CEO anda memperoleh kompensasi setiap tahunnya sebesar $587 yang diperoleh dari 30% laba bersih perusahaan',
-    'essay_question_2_second' => 'Jika pada tahun 2024 perusahaan memperoleh laba perusahaan sebesar $6,500 dan anda memperoleh kompensasi sebesar $1.350',
+    'essay_question_2_second' => 'Jika pada tahun 2024 perusahaan memperoleh laba perusahaan sebesar $6.500 dan anda memperoleh kompensasi sebesar $1.350',
     'essay_question_3_second' => 'Dari informasi yang tersaji, apakah anda akan melakukan investasi tambahan dalam aktivitas ESG?',
 
     //last question no and yes

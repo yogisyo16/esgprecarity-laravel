@@ -110,12 +110,12 @@ return [
 
     //question after list and image
     'essay_question_1' => 'As the CEO of Vian Mining Co., your annual compensation is 15% of the Co. net profit .',
-    'essay_question_2' => 'In 2024, the company achieved a net profit of $4,500, resulting in your compensation being $675.',
+    'essay_question_2' => 'In 2024, the company achieved a net profit of $4.500, resulting in your compensation being $675.',
     'essay_question_3' => 'Given the company’s financial performance and obligations, would you consider increasing investments in ESG activities to enhance sustainability, regulatory compliance, and long-term value creation?',
 
     //question updated
     'essay_question_1_second' => 'As the CEO of Vian Mining Co., your annual compensation of $587, which is devired from 30% of the company`s net profit.',
-    'essay_question_2_second' => 'In 2024, the company achieved a net profit of $6,500, resulting in your compensation being $1.350.',
+    'essay_question_2_second' => 'In 2024, the company achieved a net profit of $6.500, resulting in your compensation being $1.350.',
     'essay_question_3_second' => 'Given the company’s financial performance and obligations, would you consider increasing investments in ESG activities to enhance sustainability, regulatory compliance, and long-term value creation?',
 
     //last question no and yes
@@ -141,7 +141,7 @@ return [
     'data' => 'Data',
     'dashboard_table' => 'Responden Table',
     'menu_table' => 'Data Table',
-    
+
     'admin_question_1' => 'Q1',
     'admin_question_2' => 'Q2',
     'admin_question_3' => 'Q3',
